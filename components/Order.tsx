@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Icon from "@mdi/react";
+import { mdiCheckDecagram, mdiCheckCircle } from "@mdi/js";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -58,7 +60,7 @@ export default function Order() {
               className="flex items-start gap-3 p-4 mb-8"
               style={{ background: "#111111", border: "1px solid #2a2a2a", borderRadius: "16px" }}
             >
-              <span className="text-xl shrink-0 mt-0.5">✅</span>
+              <Icon path={mdiCheckDecagram} size={1} color="#dca47d" className="shrink-0 mt-0.5" aria-hidden="true" />
               <div>
                 <h4 className="text-sm font-bold mb-0.5" style={{ color: "#ffffff" }}>Open Nationwide</h4>
                 <p className="text-xs leading-relaxed" style={{ color: "#888888" }}>
@@ -109,7 +111,7 @@ export default function Order() {
             {/* Success state */}
             {status === "success" ? (
               <div className="flex flex-col items-center justify-center py-12 text-center gap-4">
-                <span className="text-4xl">🎉</span>
+                <Icon path={mdiCheckCircle} size={2.5} color="#dca47d" aria-hidden="true" />
                 <h4 className="text-base font-bold" style={{ color: "#ffffff" }}>Inquiry Received!</h4>
                 <p className="text-sm" style={{ color: "#888888" }}>
                   Our team will reach out to you within 1–2 business days.

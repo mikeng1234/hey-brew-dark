@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 // Update this when branch count changes — last verified Apr 2026
@@ -9,17 +8,19 @@ const BRANCH_COUNT = "50+";
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden" style={{ background: "#000000" }}>
-      {/* Hero image */}
+      {/* Hero video */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/hb-hero.png"
-          alt="Hey Brew Cafe PH"
-          fill
-          className="object-cover object-center"
-          priority
-          quality={90}
-          onError={(e) => { (e.currentTarget as HTMLImageElement).style.opacity = "0"; }}
-        />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          onError={(e) => { (e.currentTarget as HTMLVideoElement).style.opacity = "0"; }}
+        >
+          <source src="/videos/hbcoffee2.mp4" type="video/mp4" />
+        </video>
         {/* Dark scrim */}
         <div className="absolute inset-0 bg-black/65" />
       </div>

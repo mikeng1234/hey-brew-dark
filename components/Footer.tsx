@@ -1,5 +1,8 @@
 "use client";
 
+import Icon from "@mdi/react";
+import { mdiPhone, mdiEmailOutline } from "@mdi/js";
+
 const LINKS = [
   { label: "Why Join",  href: "#why" },
   { label: "Packages",  href: "#packages" },
@@ -15,22 +18,22 @@ export default function Footer() {
 
           {/* Brand */}
           <div>
-            <p className="text-base font-bold tracking-[0.08em]" style={{ color: "#dca47d" }}>
+            <a href="https://www.facebook.com/HeyBrewPH" target="_blank" rel="noopener noreferrer" className="text-base font-bold tracking-[0.08em] hover:opacity-80 transition-opacity duration-200" style={{ color: "#dca47d" }}>
               HEY BREW CAFE PH
-            </p>
+            </a>
             <p className="text-xs mt-1 mb-3" style={{ color: "#444444" }}>
               A Modern Heritage Brew.
             </p>
             <div className="space-y-1.5">
-              <a href="tel:09677963243" className="block text-xs transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dca47d] rounded" style={{ color: "#444444" }}
+              <a href="tel:09677963243" className="flex items-center gap-1.5 text-xs transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dca47d] rounded" style={{ color: "#444444" }}
                 onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#dca47d"; }}
                 onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#444444"; }}>
-                📞 0967 796 3243
+                <Icon path={mdiPhone} size={0.55} aria-hidden="true" />0967 796 3243
               </a>
-              <a href="mailto:heybrewcafeph@gmail.com" className="block text-xs transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dca47d] rounded" style={{ color: "#444444" }}
+              <a href="mailto:heybrewcafeph@gmail.com" className="flex items-center gap-1.5 text-xs transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dca47d] rounded" style={{ color: "#444444" }}
                 onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#dca47d"; }}
                 onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#444444"; }}>
-                ✉️ heybrewcafeph@gmail.com
+                <Icon path={mdiEmailOutline} size={0.55} aria-hidden="true" />heybrewcafeph@gmail.com
               </a>
             </div>
           </div>

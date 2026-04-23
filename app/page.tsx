@@ -5,6 +5,7 @@ import Gallery from "@/components/Gallery";
 import Story from "@/components/Story";
 import Order from "@/components/Order";
 import Footer from "@/components/Footer";
+import MessengerBubble from "@/components/MessengerBubble";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Order />
       </main>
       <Footer />
+      <MessengerBubble />
     </>
   );
 }

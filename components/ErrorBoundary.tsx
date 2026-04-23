@@ -1,6 +1,8 @@
 "use client";
 
 import { Component, ReactNode } from "react";
+import Icon from "@mdi/react";
+import { mdiCoffeeOutline } from "@mdi/js";
 
 interface Props { children: ReactNode; }
 interface State { hasError: boolean; }
@@ -19,7 +21,7 @@ export default class ErrorBoundary extends Component<Props, State> {
           className="min-h-screen flex flex-col items-center justify-center gap-6 px-6 text-center"
           style={{ background: "#000000" }}
         >
-          <p className="text-4xl">☕</p>
+          <Icon path={mdiCoffeeOutline} size={2} color="#888888" aria-hidden="true" />
           <h1 className="text-xl font-bold" style={{ color: "#ffffff" }}>
             Something went wrong.
           </h1>

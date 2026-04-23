@@ -31,7 +31,7 @@ export default function Navbar() {
     >
       <div className={`max-w-7xl mx-auto px-8 flex items-center justify-between transition-all duration-300 ${scrolled ? "py-3" : "py-6"}`}>
         {/* Logo */}
-        <a href="#" className="flex items-center">
+        <a href="https://www.facebook.com/HeyBrewPH" target="_blank" rel="noopener noreferrer" className="flex items-center">
           <Image
             src="/images/hb-logo-horizontal-white-nobg.png"
             alt="Hey Brew Cafe PH"
