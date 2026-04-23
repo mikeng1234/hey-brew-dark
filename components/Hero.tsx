@@ -3,6 +3,9 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+// Update this when branch count changes — last verified Apr 2026
+const BRANCH_COUNT = "50+";
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden" style={{ background: "#000000" }}>
@@ -15,6 +18,7 @@ export default function Hero() {
           className="object-cover object-center"
           priority
           quality={90}
+          onError={(e) => { (e.currentTarget as HTMLImageElement).style.opacity = "0"; }}
         />
         {/* Dark scrim */}
         <div className="absolute inset-0 bg-black/65" />
@@ -76,7 +80,7 @@ export default function Hero() {
           >
             <motion.a
               href="#order"
-              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-sm font-semibold active:scale-[0.95]"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-sm font-semibold active:scale-[0.95] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dca47d]"
               style={{ background: "#dca47d", color: "#000000", borderRadius: "30px" }}
               whileHover={{ y: -4, boxShadow: "0 8px 24px rgba(220,164,125,0.35)", transition: { duration: 0.2, ease: "easeOut" } }}
               onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#c4895f"; }}
@@ -86,7 +90,7 @@ export default function Hero() {
             </motion.a>
             <motion.a
               href="#packages"
-              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-sm font-semibold active:scale-[0.95]"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-sm font-semibold active:scale-[0.95] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dca47d]"
               style={{ border: "1px solid #2a2a2a", color: "#999999", borderRadius: "30px" }}
               whileHover={{ y: -4, boxShadow: "0 8px 24px rgba(0,0,0,0.4)", transition: { duration: 0.2, ease: "easeOut" } }}
               onMouseEnter={(e) => {
@@ -113,13 +117,13 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.7 }}
         >
           {[
-            { value: "Dual",     label: "Coffee & Milktea Concept" },
-            { value: "50+",      label: "Active Branches" },
+            { value: "Dual",       label: "Coffee & Milktea Concept" },
+            { value: BRANCH_COUNT, label: "Active Branches" },
             { value: "Nationwide", label: "Franchise Coverage" },
           ].map((s) => (
             <div key={s.label}>
               <p className="text-3xl font-bold" style={{ color: "#dca47d" }}>{s.value}</p>
-              <p className="text-xs mt-0.5" style={{ color: "#666666" }}>{s.label}</p>
+              <p className="text-xs mt-0.5" style={{ color: "#888888" }}>{s.label}</p>
             </div>
           ))}
         </motion.div>

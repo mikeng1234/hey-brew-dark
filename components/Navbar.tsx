@@ -26,7 +26,7 @@ export default function Navbar() {
       className="fixed top-0 w-full z-50 transition-all duration-300 backdrop-blur-md border-b border-[#2a2a2a]"
       style={{
         background: scrolled ? "rgba(0,0,0,0.6)" : "rgba(0,0,0,0.25)",
-        boxShadow: scrolled ? "0 4px_24px rgba(0,0,0,0.5)" : "none",
+        boxShadow: scrolled ? "0 4px 24px rgba(0,0,0,0.5)" : "none",
       }}
     >
       <div className={`max-w-7xl mx-auto px-8 flex items-center justify-between transition-all duration-300 ${scrolled ? "py-3" : "py-6"}`}>
@@ -39,6 +39,12 @@ export default function Navbar() {
             width={252}
             className={`w-auto object-contain transition-all duration-300 ${scrolled ? "h-9" : "h-14"}`}
             priority
+            onError={(e) => {
+              const el = e.currentTarget as HTMLImageElement;
+              el.style.display = "none";
+              const fallback = el.parentElement;
+              if (fallback) fallback.textContent = "HEY BREW CAFE PH";
+            }}
           />
         </a>
 
@@ -48,7 +54,7 @@ export default function Navbar() {
             <a
               key={l.label}
               href={l.href}
-              className="transition-colors duration-200 hover:text-white"
+              className="transition-colors duration-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dca47d] rounded"
             >
               {l.label}
             </a>
@@ -58,7 +64,7 @@ export default function Navbar() {
         {/* CTA */}
         <motion.a
           href="#order"
-          className={`hidden md:inline-flex items-center font-semibold active:scale-[0.95] transition-all duration-300 ${scrolled ? "px-5 py-2 text-sm" : "px-7 py-3 text-base"}`}
+          className={`hidden md:inline-flex items-center font-semibold active:scale-[0.95] transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dca47d] ${scrolled ? "px-5 py-2 text-sm" : "px-7 py-3 text-base"}`}
           style={{ background: "#dca47d", color: "#000000", borderRadius: "30px" }}
           whileHover={{ y: -4, boxShadow: "0 8px 24px rgba(220,164,125,0.35)", transition: { duration: 0.2, ease: "easeOut" } }}
           onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#c4895f"; }}
@@ -69,9 +75,11 @@ export default function Navbar() {
 
         {/* Hamburger */}
         <button
-          className="md:hidden p-2 text-white"
+          className="md:hidden p-2 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dca47d] rounded"
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle menu"
+          aria-expanded={open}
+          aria-controls="mobile-nav"
         >
           <div className="w-6 space-y-2">
             <span className={`block h-0.5 bg-current transition-all duration-200 ${open ? "rotate-45 translate-y-2.5" : ""}`} />
@@ -81,15 +89,23 @@ export default function Navbar() {
         </button>
       </div>
 
+      {/* Outside-click overlay */}
+      {open && (
+        <div
+          className="fixed inset-0 z-40 md:hidden"
+          onClick={() => setOpen(false)}
+        />
+      )}
+
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden border-t border-[#2a2a2a] px-8 py-6 space-y-5"
-          style={{ background: "rgba(0,0,0,0.85)" }}>
+        <nav id="mobile-nav" aria-label="Mobile navigation" className="md:hidden relative z-50 border-t border-[#2a2a2a] px-8 py-6 space-y-5"
+          style={{ background: "rgba(0,0,0,0.95)" }}>
           {LINKS.map((l) => (
             <a
               key={l.label}
               href={l.href}
-              className="block text-base transition-colors duration-200"
+              className="block text-base transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dca47d] rounded"
               style={{ color: "#999999" }}
               onClick={() => setOpen(false)}
               onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#ffffff"; }}
@@ -100,13 +116,15 @@ export default function Navbar() {
           ))}
           <a
             href="#order"
-            className="inline-flex px-6 py-2.5 text-base font-semibold"
+            className="inline-flex px-6 py-2.5 text-base font-semibold active:scale-[0.95] transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dca47d]"
             style={{ background: "#dca47d", color: "#000000", borderRadius: "30px" }}
             onClick={() => setOpen(false)}
+            onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#c4895f"; }}
+            onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#dca47d"; }}
           >
             Franchise Now
           </a>
-        </div>
+        </nav>
       )}
     </nav>
   );

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
+import ErrorBoundary from "@/components/ErrorBoundary";
+import "@mdi/font/css/materialdesignicons.min.css";
 import "./globals.css";
 
 const openSans = Open_Sans({
@@ -20,10 +22,8 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={openSans.variable}>
-      <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" />
-      </head>
-      <body>{children}</body>
+      <head />
+      <body><ErrorBoundary>{children}</ErrorBoundary></body>
     </html>
   );
 }

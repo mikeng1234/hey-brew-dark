@@ -22,12 +22,12 @@ export default function Footer() {
               A Modern Heritage Brew.
             </p>
             <div className="space-y-1.5">
-              <a href="tel:09677963243" className="block text-xs transition-colors duration-200" style={{ color: "#444444" }}
+              <a href="tel:09677963243" className="block text-xs transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dca47d] rounded" style={{ color: "#444444" }}
                 onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#dca47d"; }}
                 onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#444444"; }}>
                 📞 0967 796 3243
               </a>
-              <a href="mailto:heybrewcafeph@gmail.com" className="block text-xs transition-colors duration-200" style={{ color: "#444444" }}
+              <a href="mailto:heybrewcafeph@gmail.com" className="block text-xs transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dca47d] rounded" style={{ color: "#444444" }}
                 onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#dca47d"; }}
                 onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#444444"; }}>
                 ✉️ heybrewcafeph@gmail.com
@@ -41,10 +41,10 @@ export default function Footer() {
               <a
                 key={l.label}
                 href={l.href}
-                className="text-xs transition-colors duration-200"
-                style={{ color: "#666666" }}
+                className="text-xs transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dca47d] rounded"
+                style={{ color: "#888888" }}
                 onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#ffffff"; }}
-                onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#666666"; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#888888"; }}
               >
                 {l.label}
               </a>
@@ -63,7 +63,7 @@ export default function Footer() {
               href="https://www.facebook.com/GenXcript"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline transition-colors duration-200"
+              className="underline transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dca47d] rounded"
               style={{ color: "#444444" }}
               onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#dca47d"; }}
               onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#444444"; }}

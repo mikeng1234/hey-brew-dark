@@ -66,7 +66,7 @@ export default function Menu() {
           </motion.h2>
           <motion.p
             className="text-sm max-w-lg"
-            style={{ color: "#666666" }}
+            style={{ color: "#888888" }}
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -122,20 +122,21 @@ export default function Menu() {
                 />
               </div>
 
-              <p className="text-xs mb-1" style={{ color: "#666666", letterSpacing: "0.1em", textTransform: "uppercase" }}>
+              <p className="text-xs mb-1" style={{ color: "#888888", letterSpacing: "0.1em", textTransform: "uppercase" }}>
                 {item.category}
               </p>
               <h3 className="text-base font-bold mb-2" style={{ color: "#ffffff" }}>
                 {item.name}
               </h3>
-              <p className="text-sm leading-relaxed flex-1 mb-5" style={{ color: "#666666" }}>
+              <p className="text-sm leading-relaxed flex-1 mb-5" style={{ color: "#888888" }}>
                 {item.desc}
               </p>
 
               <div className="flex items-center justify-between">
                 <a
                   href="#order"
-                  className="text-xs px-4 py-2 font-semibold transition-all duration-200 active:scale-[0.92]"
+                  aria-label={`Learn more about ${item.name}`}
+                  className="text-xs px-4 py-2 font-semibold transition-all duration-200 active:scale-[0.92] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dca47d]"
                   style={{ background: "rgba(220,164,125,0.1)", color: "#dca47d", borderRadius: "30px", border: "1px solid rgba(220,164,125,0.25)" }}
                   onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "rgba(220,164,125,0.2)"; }}
                   onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "rgba(220,164,125,0.1)"; }}
@@ -157,7 +158,7 @@ export default function Menu() {
         >
           <a
             href="#order"
-            className="inline-flex items-center gap-2 text-sm font-semibold transition-colors duration-200"
+            className="inline-flex items-center gap-2 text-sm font-semibold transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dca47d]"
             style={{ color: "#19ba97" }}
             onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#dca47d"; }}
             onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#19ba97"; }}

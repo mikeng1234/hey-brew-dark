@@ -3,19 +3,23 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+// Tiny 1×1 black blur placeholder (base64)
+const BLUR =
+  "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAABAAEDASIAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAACf/EABQQAQAAAAAAAAAAAAAAAAAAAAD/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AJQAB/9k=";
+
 const PHOTOS = [
-  { src: "/images/samples/sample1.jpg",  span: "col-span-2 row-span-2" }, // big
-  { src: "/images/samples/sample2.jpg",  span: "col-span-1 row-span-1" },
-  { src: "/images/samples/sample3.jpg",  span: "col-span-1 row-span-1" },
-  { src: "/images/samples/sample4.jpg",  span: "col-span-1 row-span-1" },
-  { src: "/images/samples/sample5.jpg",  span: "col-span-1 row-span-1" },
-  { src: "/images/samples/sample6.jpg",  span: "col-span-1 row-span-1" },
-  { src: "/images/samples/sample7.jpg",  span: "col-span-1 row-span-1" },
-  { src: "/images/samples/sample8.jpg",  span: "col-span-2 row-span-1" }, // wide
-  { src: "/images/samples/sample9.jpg",  span: "col-span-1 row-span-1" },
-  { src: "/images/samples/sample10.jpg", span: "col-span-1 row-span-1" },
-  { src: "/images/samples/sample11.jpg", span: "col-span-1 row-span-1" },
-  { src: "/images/samples/sample12.jpg", span: "col-span-1 row-span-1" },
+  { src: "/images/samples/sample1.jpg",  span: "col-span-1 row-span-1 lg:col-span-2 lg:row-span-2", sizes: "(max-width: 768px) 50vw, 50vw" },
+  { src: "/images/samples/sample2.jpg",  span: "col-span-1 row-span-1", sizes: "(max-width: 768px) 50vw, 25vw" },
+  { src: "/images/samples/sample3.jpg",  span: "col-span-1 row-span-1", sizes: "(max-width: 768px) 50vw, 25vw" },
+  { src: "/images/samples/sample4.jpg",  span: "col-span-1 row-span-1", sizes: "(max-width: 768px) 50vw, 25vw" },
+  { src: "/images/samples/sample5.jpg",  span: "col-span-1 row-span-1", sizes: "(max-width: 768px) 50vw, 25vw" },
+  { src: "/images/samples/sample6.jpg",  span: "col-span-1 row-span-1", sizes: "(max-width: 768px) 50vw, 25vw" },
+  { src: "/images/samples/sample7.jpg",  span: "col-span-1 row-span-1", sizes: "(max-width: 768px) 50vw, 25vw" },
+  { src: "/images/samples/sample8.jpg",  span: "col-span-1 row-span-1 lg:col-span-2", sizes: "(max-width: 768px) 50vw, 50vw" },
+  { src: "/images/samples/sample9.jpg",  span: "col-span-1 row-span-1", sizes: "(max-width: 768px) 50vw, 25vw" },
+  { src: "/images/samples/sample10.jpg", span: "col-span-1 row-span-1", sizes: "(max-width: 768px) 50vw, 25vw" },
+  { src: "/images/samples/sample11.jpg", span: "col-span-1 row-span-1", sizes: "(max-width: 768px) 50vw, 25vw" },
+  { src: "/images/samples/sample12.jpg", span: "col-span-1 row-span-1", sizes: "(max-width: 768px) 50vw, 25vw" },
 ];
 
 export default function Gallery() {
@@ -45,15 +49,12 @@ export default function Gallery() {
         </motion.div>
 
         {/* Masonry-style grid */}
-        <div
-          className="grid gap-3"
-          style={{ gridTemplateColumns: "repeat(4, 1fr)", gridAutoRows: "200px" }}
-        >
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3" style={{ gridAutoRows: "180px" }}>
           {PHOTOS.map((photo, i) => (
             <motion.div
               key={photo.src}
               className={`relative overflow-hidden group ${photo.span}`}
-              style={{ borderRadius: "14px" }}
+              style={{ borderRadius: "14px", background: "#111111" }}
               initial={{ opacity: 0, scale: 0.97 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -65,7 +66,10 @@ export default function Gallery() {
                 alt={`Hey Brew event photo ${i + 1}`}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
-                sizes="(max-width: 768px) 50vw, 25vw"
+                sizes={photo.sizes}
+                placeholder="blur"
+                blurDataURL={BLUR}
+                onError={(e) => { (e.currentTarget as HTMLImageElement).style.opacity = "0"; }}
               />
               {/* Subtle dark overlay on hover */}
               <div

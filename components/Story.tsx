@@ -16,7 +16,7 @@ const REMINDERS = [
 
 export default function Story() {
   return (
-    <section id="packages" className="py-24 border-t border-[#1a1a1a]" style={{ background: "#000000" }}>
+    <section id="story" className="py-24 border-t border-[#1a1a1a]" style={{ background: "#000000" }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
@@ -38,7 +38,7 @@ export default function Story() {
               <br />
               <span style={{ color: "#dca47d" }}>to your event.</span>
             </h2>
-            <p className="text-sm leading-relaxed mb-4" style={{ color: "#666666" }}>
+            <p className="text-sm leading-relaxed mb-4" style={{ color: "#888888" }}>
               Book our coffee cart for your next corporate event, wedding, or celebration.
               All packages include set-up, booth, and full manpower — ready to serve.
             </p>
@@ -48,14 +48,14 @@ export default function Story() {
               {REMINDERS.map((r, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <span className="mt-1 shrink-0 w-1.5 h-1.5 rounded-full" style={{ background: "#dca47d" }} />
-                  <p className="text-xs leading-relaxed" style={{ color: "#666666" }}>{r}</p>
+                  <p className="text-xs leading-relaxed" style={{ color: "#888888" }}>{r}</p>
                 </div>
               ))}
             </div>
 
             <motion.a
               href="#order"
-              className="inline-flex items-center gap-2 px-7 py-3 text-sm font-semibold active:scale-[0.95]"
+              className="inline-flex items-center gap-2 px-7 py-3 text-sm font-semibold active:scale-[0.95] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dca47d]"
               style={{ background: "#dca47d", color: "#000000", borderRadius: "30px" }}
               whileHover={{ y: -4, boxShadow: "0 8px 24px rgba(220,164,125,0.35)", transition: { duration: 0.2, ease: "easeOut" } }}
               onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#c4895f"; }}
@@ -66,7 +66,7 @@ export default function Story() {
           </motion.div>
 
           {/* Right — package cards */}
-          <div className="space-y-4" id="story">
+          <div className="space-y-4" id="packages">
             {PACKAGES.map((pkg, i) => (
               <motion.div
                 key={pkg.name}
@@ -96,7 +96,7 @@ export default function Story() {
                   style={{ background: pkg.highlight ? "rgba(220,164,125,0.15)" : "rgba(220,164,125,0.06)" }}
                 >
                   <span className="text-lg font-bold" style={{ color: "#dca47d" }}>{pkg.price}</span>
-                  <span className="text-xs mt-0.5" style={{ color: "#666666" }}>{pkg.cups}</span>
+                  <span className="text-xs mt-0.5" style={{ color: "#888888" }}>{pkg.cups}</span>
                 </div>
 
                 <div className="flex-1">
@@ -108,14 +108,14 @@ export default function Story() {
                       </span>
                     )}
                   </div>
-                  <p className="text-xs leading-relaxed" style={{ color: "#666666" }}>
+                  <p className="text-xs leading-relaxed" style={{ color: "#888888" }}>
                     3 flavors of your choice · Set-up included · Coffee booth for 3 hours · Manpower included
                   </p>
                 </div>
 
                 <a
                   href="#order"
-                  className="shrink-0 text-xs px-4 py-2 font-semibold transition-all duration-200"
+                  className="shrink-0 text-xs px-4 py-2 font-semibold transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dca47d]"
                   style={{ background: "rgba(220,164,125,0.1)", color: "#dca47d", borderRadius: "30px", border: "1px solid rgba(220,164,125,0.25)" }}
                   onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "rgba(220,164,125,0.2)"; }}
                   onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "rgba(220,164,125,0.1)"; }}
