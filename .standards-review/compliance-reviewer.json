@@ -1,0 +1,95 @@
+{
+  "role": "compliance-reviewer",
+  "lastChecked": "2026-04-23T11:30:00.000Z",
+  "summary": "0 open, 8 resolved",
+  "findings": [
+    {
+      "id": "comp-001",
+      "severity": "issue",
+      "title": "Form inputs have no 'for'/'id' association with their labels",
+      "description": "All six inputs and the select in Order.tsx use bare <label> elements with no 'htmlFor' attribute, and the corresponding inputs carry no 'id'. Screen readers cannot programmatically associate the label text with its control, failing WCAG 2.2 SC 1.3.1 (Info and Relationships) and SC 4.1.2 (Name, Role, Value). Add matching 'id' attributes to every input/select and 'htmlFor' to every label.",
+      "file": "components/Order.tsx",
+      "line": 88,
+      "status": "resolved",
+      "createdAt": "2026-04-23T00:00:00.000Z",
+      "resolvedAt": "2026-04-23T10:37:54.926Z"
+    },
+    {
+      "id": "comp-002",
+      "severity": "issue",
+      "title": "Mobile nav menu toggled without aria-expanded or aria-controls",
+      "description": "The hamburger <button> in Navbar.tsx updates visual state only; it has no 'aria-expanded' attribute that reflects the open/closed state, and no 'aria-controls' pointing at the mobile menu container. Screen reader users cannot determine whether the menu is open, violating WCAG 2.2 SC 4.1.2. Add 'aria-expanded={open}' to the button and 'aria-controls=\"mobile-nav\"' paired with 'id=\"mobile-nav\"' on the dropdown div.",
+      "file": "components/Navbar.tsx",
+      "line": 71,
+      "status": "resolved",
+      "createdAt": "2026-04-23T00:00:00.000Z",
+      "resolvedAt": "2026-04-23T10:37:54.926Z"
+    },
+    {
+      "id": "comp-003",
+      "severity": "issue",
+      "title": "Mobile nav menu is not announced as a navigation landmark",
+      "description": "The mobile menu drawer rendered at Navbar.tsx line 85 is a plain <div> with no role or aria attribute, so assistive technologies have no way to identify it as a navigation region. Wrap the mobile link list in a <nav aria-label=\"Mobile navigation\"> or add role=\"navigation\" to the container div.",
+      "file": "components/Navbar.tsx",
+      "line": 85,
+      "status": "resolved",
+      "createdAt": "2026-04-23T00:00:00.000Z",
+      "resolvedAt": "2026-04-23T10:35:08.059Z"
+    },
+    {
+      "id": "comp-004",
+      "severity": "issue",
+      "title": "Contact info links render at color #666666 — insufficient contrast on black background",
+      "description": "The phone, email, and Facebook link text in Order.tsx (line 63) uses color #666666 on a #000000 background, yielding a contrast ratio of approximately 3.4:1, well below the WCAG AA threshold of 4.5:1 for normal-sized text (SC 1.4.3). The same color is used for label prefixes (line 56) and the body paragraph (line 29). Replace #666666 with a value of at least #767676 on black (#767676 on #000 = 4.54:1) or use a lighter token already present in the palette such as #999999.",
+      "file": "components/Order.tsx",
+      "line": 56,
+      "status": "resolved",
+      "createdAt": "2026-04-23T00:00:00.000Z",
+      "resolvedAt": "2026-04-23T10:37:54.926Z"
+    },
+    {
+      "id": "comp-005",
+      "severity": "issue",
+      "title": "Hero body copy rendered at #999999 — contrast insufficient with hero scrim overlay",
+      "description": "Hero.tsx line 61 sets the description paragraph to #999999 over a dynamic black scrim (bg-black/65 over a photo). The computed luminance of #999999 on near-black yields roughly 3.3:1, falling below the 4.5:1 WCAG AA requirement for body text (SC 1.4.3). The same #999999 value is also the default resting color for the 'View Packages' CTA text (line 90) against the transparent/black surface. Increase these resting text colors to at least #b3b3b3 (which clears 4.5:1 on black) or #ffffff.",
+      "file": "components/Hero.tsx",
+      "line": 61,
+      "status": "resolved",
+      "createdAt": "2026-04-23T00:00:00.000Z",
+      "resolvedAt": "2026-04-23T10:37:54.926Z"
+    },
+    {
+      "id": "comp-006",
+      "severity": "issue",
+      "title": "Menu card description text rendered at #666666 — insufficient contrast on #111111",
+      "description": "Menu.tsx line 131 renders card description paragraphs as #666666 on a #111111 card background, producing a contrast ratio of approximately 3.1:1, far below the 4.5:1 AA threshold for body text (SC 1.4.3). The category label at line 125 and the bottom CTA link ('Inquire about franchising →') at line 162 share the same under-contrast color. Raise all to a minimum of #888888 on #111111 (≈ 4.6:1) or use the existing #999999 token.",
+      "file": "components/Menu.tsx",
+      "line": 131,
+      "status": "resolved",
+      "createdAt": "2026-04-23T00:00:00.000Z",
+      "resolvedAt": "2026-04-23T10:37:54.926Z"
+    },
+    {
+      "id": "comp-007",
+      "severity": "issue",
+      "title": "Repeated 'Learn More' links in Menu.tsx lack distinguishing accessible names",
+      "description": "All four cards in Menu.tsx (line 136) render the same 'Learn More' anchor text with no aria-label differentiation. Screen reader users navigating by link list encounter four identical entries with no context, failing WCAG 2.2 SC 2.4.6 (Headings and Labels) and the advisory SC 2.4.9 (Link Purpose — Link Only). Add aria-label=\"Learn more about [item.name]\" to each anchor, e.g. 'Learn more about Locally Sourced Beans'.",
+      "file": "components/Menu.tsx",
+      "line": 136,
+      "status": "resolved",
+      "createdAt": "2026-04-23T00:00:00.000Z",
+      "resolvedAt": "2026-04-23T11:30:00.000Z"
+    },
+    {
+      "id": "comp-008",
+      "severity": "suggestion",
+      "title": "Form submit confirmation provides no accessible status announcement",
+      "description": "Order.tsx line 85 intercepts the submit event with e.preventDefault() but renders no success or error feedback — neither visible text nor an aria-live region. Keyboard and screen reader users receive no confirmation that the inquiry was received, which conflicts with WCAG 2.2 SC 4.1.3 (Status Messages). Add an aria-live=\"polite\" region that announces submission status after the handler resolves.",
+      "file": "components/Order.tsx",
+      "line": 85,
+      "status": "resolved",
+      "createdAt": "2026-04-23T00:00:00.000Z",
+      "resolvedAt": "2026-04-23T11:30:00.000Z"
+    }
+  ]
+}

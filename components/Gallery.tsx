@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-// Tiny 1×1 black blur placeholder (base64)
 const BLUR =
   "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAABAAEDASIAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAACf/EABQQAQAAAAAAAAAAAAAAAAAAAAD/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AJQAB/9k=";
 
@@ -24,7 +23,7 @@ const PHOTOS = [
 
 export default function Gallery() {
   return (
-    <section className="py-24 border-t border-[#1a1a1a]" style={{ background: "#000000" }}>
+    <section className="py-24 border-t border-[#321a10]" style={{ background: "#241610" }}>
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
@@ -35,16 +34,16 @@ export default function Gallery() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: "#19ba97" }}>
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: "#B8794B" }}>
             Event Snapshots
           </p>
           <h2
             className="font-bold leading-tight"
-            style={{ fontSize: "clamp(2rem, 4vw, 3rem)", color: "#ffffff", letterSpacing: "-0.02em" }}
+            style={{ fontSize: "clamp(2rem, 4vw, 3rem)", color: "#EAC8A8", letterSpacing: "-0.02em" }}
           >
             Hey Brew at your event.
             <br />
-            <span style={{ color: "#dca47d" }}>Every cup, a memory.</span>
+            <span style={{ color: "#B8794B" }}>Every cup, a memory.</span>
           </h2>
         </motion.div>
 
@@ -54,7 +53,7 @@ export default function Gallery() {
             <motion.div
               key={photo.src}
               className={`relative overflow-hidden group ${photo.span}`}
-              style={{ borderRadius: "14px", background: "#111111" }}
+              style={{ borderRadius: "14px", background: "#4C2D1F" }}
               initial={{ opacity: 0, scale: 0.97 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -71,10 +70,10 @@ export default function Gallery() {
                 blurDataURL={BLUR}
                 onError={(e) => { (e.currentTarget as HTMLImageElement).style.opacity = "0"; }}
               />
-              {/* Subtle dark overlay on hover */}
+              {/* Warm overlay on hover */}
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                style={{ background: "rgba(0,0,0,0.25)" }}
+                style={{ background: "rgba(36,22,16,0.35)" }}
               />
             </motion.div>
           ))}

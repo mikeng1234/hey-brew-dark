@@ -1,0 +1,95 @@
+{
+  "role": "ux-reviewer",
+  "lastChecked": "2026-04-23T11:30:00.000Z",
+  "summary": "0 open, 7 resolved",
+  "findings": [
+    {
+      "id": "ux-001",
+      "severity": "issue",
+      "title": "Form submit produces zero visible feedback",
+      "description": "The inquiry form in Order.tsx calls e.preventDefault() and does nothing else — no loading spinner, no success message, no error state — so the user has no idea whether their submission was received. Add a submitting boolean state to show a loading indicator on the button and a success/error message after the action resolves.",
+      "file": "components/Order.tsx",
+      "line": 85,
+      "status": "resolved",
+      "createdAt": "2026-04-23T10:45:00.000Z",
+      "resolvedAt": "2026-04-23T10:37:54.926Z"
+    },
+    {
+      "id": "ux-002",
+      "severity": "issue",
+      "title": "No required field indicators on any form inputs",
+      "description": "All six form fields (First Name, Last Name, Mobile, Email, Target Location, Capital) lack required attributes and any visual indicator (asterisk or inline label note), so users cannot tell which fields must be filled before submitting and receive no browser-level validation feedback. Add required to each mandatory input and a visible marker such as a small asterisk next to the label.",
+      "file": "components/Order.tsx",
+      "line": 88,
+      "status": "resolved",
+      "createdAt": "2026-04-23T10:45:00.000Z",
+      "resolvedAt": "2026-04-23T10:37:54.926Z"
+    },
+    {
+      "id": "ux-003",
+      "severity": "issue",
+      "title": "Mobile menu has no close-on-outside-click or focus-trap behavior",
+      "description": "The mobile drawer in Navbar.tsx opens on hamburger press but only closes when the user explicitly clicks a link or the hamburger again — tapping anywhere outside the drawer does nothing, which is the expected mobile pattern and will feel broken to users. Add a transparent overlay behind the drawer that calls setOpen(false) on click, or attach a document-level click listener that closes the menu when the target is outside the nav.",
+      "file": "components/Navbar.tsx",
+      "line": 85,
+      "status": "resolved",
+      "createdAt": "2026-04-23T10:45:00.000Z",
+      "resolvedAt": "2026-04-23T10:35:08.059Z"
+    },
+    {
+      "id": "ux-004",
+      "severity": "issue",
+      "title": "Gallery grid collapses illegibly on mobile — fixed 4-column template breaks small screens",
+      "description": "Gallery.tsx sets gridTemplateColumns to repeat(4, 1fr) as an inline style with no responsive override, so on a 375px screen each cell is under 90px wide and the col-span-2 hero image is only ~180px — barely usable, and images with row-span-2 will be extremely short. Replace the inline grid-template-columns with responsive Tailwind classes (grid-cols-2 sm:grid-cols-3 lg:grid-cols-4) and keep the span logic only for larger breakpoints.",
+      "file": "components/Gallery.tsx",
+      "line": 49,
+      "status": "resolved",
+      "createdAt": "2026-04-23T10:45:00.000Z",
+      "resolvedAt": "2026-04-23T10:35:08.059Z"
+    },
+    {
+      "id": "ux-005",
+      "severity": "suggestion",
+      "title": "Select dropdown has no visible chevron indicator",
+      "description": "The Available Capital select in Order.tsx uses appearance-none which removes the browser-native dropdown arrow, but no custom chevron icon is placed over it, so the field looks like a plain text input and users may not recognize it as a select. Add a positioned SVG or icon library chevron to the right side of the select container.",
+      "file": "components/Order.tsx",
+      "line": 110,
+      "status": "resolved",
+      "createdAt": "2026-04-23T10:45:00.000Z",
+      "resolvedAt": "2026-04-23T11:30:00.000Z"
+    },
+    {
+      "id": "ux-006",
+      "severity": "suggestion",
+      "title": "Mobile menu CTA button missing hover/active states",
+      "description": "The Franchise Now link inside the mobile drawer (Navbar.tsx line 101) has no onMouseEnter/onMouseLeave handlers and no active:scale class, unlike the desktop CTA and every other interactive link, creating an inconsistent feel on touch devices that support hover (iPad) and in the browser. Apply the same onMouseEnter/onMouseLeave color swap and active:scale-[0.95] class used on the desktop variant.",
+      "file": "components/Navbar.tsx",
+      "line": 101,
+      "status": "resolved",
+      "createdAt": "2026-04-23T10:45:00.000Z",
+      "resolvedAt": "2026-04-23T11:30:00.000Z"
+    },
+    {
+      "id": "ux-007",
+      "severity": "suggestion",
+      "title": "No keyboard focus style on any interactive element",
+      "description": "Every interactive element across all components (nav links, CTA buttons, form inputs excepted, card links) relies on Tailwind's default outline-none or does not set a focus-visible ring, so keyboard users receive no visible focus indicator when tabbing through the page. Add focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#dca47d] (or equivalent) to all anchor and button elements.",
+      "file": "components/Navbar.tsx",
+      "line": 48,
+      "status": "resolved",
+      "createdAt": "2026-04-23T10:45:00.000Z",
+      "resolvedAt": "2026-04-23T11:30:00.000Z"
+    },
+    {
+      "id": "ux-008",
+      "severity": "praise",
+      "title": "Consistent hover feedback across all interactive elements",
+      "description": "Every clickable anchor and button in the codebase (nav links, CTA buttons, card action links, footer links, contact links) implements onMouseEnter/onMouseLeave color transitions plus framer-motion lift/shadow on hover, giving a polished and coherent interaction vocabulary throughout the page.",
+      "file": "components/Navbar.tsx",
+      "line": null,
+      "status": "open",
+      "createdAt": "2026-04-23T10:45:00.000Z",
+      "resolvedAt": null
+    }
+  ]
+}

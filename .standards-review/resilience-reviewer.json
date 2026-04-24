@@ -1,0 +1,62 @@
+{
+  "role": "resilience-reviewer",
+  "lastChecked": "2026-04-23T00:00:00.000Z",
+  "summary": "0 open, 5 resolved",
+  "findings": [
+    {
+      "id": "rr-001",
+      "severity": "issue",
+      "title": "Form submit is a dead no-op — no submission handler, no feedback",
+      "description": "The inquiry form in Order.tsx calls `e.preventDefault()` and nothing else: no fetch, no state change, no success or error message, so every submission silently disappears. Add a `useState` pair for `status` (idle/loading/success/error), perform the actual POST inside the handler, and render a visible result message below the button.",
+      "file": "components/Order.tsx",
+      "line": 85,
+      "status": "resolved",
+      "createdAt": "2026-04-23T00:00:00.000Z",
+      "resolvedAt": "2026-04-23T09:15:00.000Z"
+    },
+    {
+      "id": "rr-002",
+      "severity": "issue",
+      "title": "Gallery images have no placeholder or fallback — broken images render as blank cells",
+      "description": "All 12 `<Image>` entries in Gallery.tsx use no `placeholder` prop and no `onError` handler, so a missing or 404 sample image produces a completely empty grid cell with no visual indication of failure. Add `placeholder=\"blur\"` with a `blurDataURL` (or a solid-colour data URI) and an `onError` handler that swaps in a local fallback image.",
+      "file": "components/Gallery.tsx",
+      "line": 63,
+      "status": "resolved",
+      "createdAt": "2026-04-23T00:00:00.000Z",
+      "resolvedAt": "2026-04-23T10:41:53.282Z"
+    },
+    {
+      "id": "rr-003",
+      "severity": "issue",
+      "title": "Hero and Navbar logo images have no fallback — a missing asset blanks critical UI",
+      "description": "The hero background (`hb-hero.png`) and the navbar logo (`hb-logo-horizontal-white-nobg.png`) both use `<Image>` with `priority` but no `onError` handler or `placeholder`, so a missing file leaves either the entire hero area or the top navigation brand mark invisible with no recovery. Add an `onError` handler to each that replaces `src` with a local placeholder, and set a `placeholder=\"blur\"` data URI for the hero image.",
+      "file": "components/Hero.tsx",
+      "line": 11,
+      "status": "resolved",
+      "createdAt": "2026-04-23T00:00:00.000Z",
+      "resolvedAt": "2026-04-23T10:41:53.282Z"
+    },
+    {
+      "id": "rr-004",
+      "severity": "issue",
+      "title": "External CDN stylesheet loaded with no fallback — icon font silently fails offline or on CDN outage",
+      "description": "layout.tsx loads `@mdi/font` from `cdn.jsdelivr.net` with a bare `<link>` and no fallback: if the CDN is unreachable (offline user, CDN outage, CSP block) any component relying on Material Design Icons will render empty glyphs with no error surfaced. Either bundle the font locally (`npm install @mdi/font` and import from `node_modules`) or add an inline `<script>` after the link that detects load failure and injects a local copy.",
+      "file": "app/layout.tsx",
+      "line": 24,
+      "status": "resolved",
+      "createdAt": "2026-04-23T00:00:00.000Z",
+      "resolvedAt": "2026-04-23T10:41:53.282Z"
+    },
+    {
+      "id": "rr-005",
+      "severity": "suggestion",
+      "title": "No React error boundary wrapping the page — a framer-motion or image render error blanks the entire page",
+      "description": "The root layout and the page component have no `ErrorBoundary` wrapper, so any uncaught render exception thrown by `motion.*` components or `next/image` on client hydration will unmount the entire React tree and show a blank screen. Wrap the `{children}` in layout.tsx (or the page-level component) with a lightweight `ErrorBoundary` that renders a minimal fallback UI.",
+      "file": "app/layout.tsx",
+      "line": 22,
+      "status": "resolved",
+      "createdAt": "2026-04-23T00:00:00.000Z",
+      "resolvedAt": "2026-04-23T10:41:53.282Z"
+    }
+  ]
+}

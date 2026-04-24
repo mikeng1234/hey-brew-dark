@@ -1,0 +1,2040 @@
+
+> but-first-coffee@0.1.0 dev
+> next dev --port 3003
+
+▲ Next.js 16.2.4 (Turbopack)
+- Local:         http://localhost:3003
+- Network:       http://169.254.83.107:3003
+✓ Ready in 403ms
+
+ GET / 200 in 2.4s (next.js: 2.3s, application-code: 181ms)
+ GET / 200 in 53ms (next.js: 7ms, application-code: 46ms)
+ GET / 200 in 112ms (next.js: 49ms, application-code: 63ms)
+ GET / 200 in 35ms (next.js: 4ms, application-code: 31ms)
+✓ Compiled in 29ms
+ GET / 200 in 75ms (next.js: 46ms, application-code: 29ms)
+✓ Compiled in 30ms
+ GET / 200 in 59ms (next.js: 39ms, application-code: 20ms)
+✓ Compiled in 29ms
+ GET / 200 in 76ms (next.js: 47ms, application-code: 29ms)
+✓ Compiled in 46ms
+ GET / 200 in 95ms (next.js: 37ms, application-code: 58ms)
+ GET / 200 in 34ms (next.js: 5ms, application-code: 29ms)
+✓ Compiled in 45ms
+ GET / 200 in 99ms (next.js: 42ms, application-code: 57ms)
+ GET / 200 in 28ms (next.js: 4ms, application-code: 25ms)
+✓ Compiled in 39ms
+ GET / 200 in 67ms (next.js: 47ms, application-code: 20ms)
+ GET / 200 in 132ms (next.js: 3ms, application-code: 129ms)
+✓ Compiled in 214ms
+[browser] Image with src "/images/hb-hero.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+ GET / 200 in 305ms (next.js: 106ms, application-code: 198ms)
+ GET / 200 in 150ms (next.js: 37ms, application-code: 114ms)
+ GET / 200 in 54ms (next.js: 5ms, application-code: 49ms)
+ GET / 200 in 21ms (next.js: 4ms, application-code: 18ms)
+✓ Compiled in 35ms
+ GET / 200 in 73ms (next.js: 42ms, application-code: 31ms)
+✓ Compiled in 30ms
+ GET / 200 in 52ms (next.js: 32ms, application-code: 20ms)
+Image with src "/images/hb-hero.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET / 200 in 109ms (next.js: 2ms, application-code: 107ms)
+✓ Compiled in 24ms
+ GET / 200 in 71ms (next.js: 47ms, application-code: 24ms)
+✓ Compiled in 39ms
+ GET / 200 in 63ms (next.js: 35ms, application-code: 28ms)
+Image with src "/images/hb-hero.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET / 200 in 98ms (next.js: 3ms, application-code: 95ms)
+[browser] Image with src "/images/hb-hero.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 33ms
+ GET / 200 in 67ms (next.js: 36ms, application-code: 30ms)
+✓ Compiled in 39ms
+ GET / 200 in 83ms (next.js: 48ms, application-code: 35ms)
+✓ Compiled in 26ms
+ GET / 200 in 75ms (next.js: 45ms, application-code: 29ms)
+✓ Compiled in 25ms
+ GET / 200 in 65ms (next.js: 44ms, application-code: 22ms)
+✓ Compiled in 26ms
+ GET / 200 in 61ms (next.js: 38ms, application-code: 23ms)
+✓ Compiled in 29ms
+ GET / 200 in 58ms (next.js: 37ms, application-code: 21ms)
+Image with src "/images/hb-hero.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET / 200 in 106ms (next.js: 2ms, application-code: 104ms)
+[browser] Image with src "/images/hb-hero.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+⨯ ./components/Hero.tsx:104:17
+Expected '</', got 'jsx text'
+  [90m102 |[0m             >
+  [90m103 |[0m               [33mView[0m [33mPackages[0m
+[31m[1m>[0m [90m104 |[0m             </a>
+  [90m    |[0m                 [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m105 |[0m           </motion.div>
+  [90m    |[0m [31m[1m^^^^^^^^^^[0m
+  [90m106 |[0m         </div>
+  [90m107 |[0m
+  [90m108 |[0m         {[90m/* Stats row */[0m}
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+
+✓ Compiled in 37ms
+ GET / 500 in 817ms (next.js: 705ms, application-code: 112ms)
+⨯ ./components/Hero.tsx:104:17
+Expected '</', got 'jsx text'
+  [90m102 |[0m             >
+  [90m103 |[0m               [33mView[0m [33mPackages[0m
+[31m[1m>[0m [90m104 |[0m             </a>
+  [90m    |[0m                 [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m105 |[0m           </motion.div>
+  [90m    |[0m [31m[1m^^^^^^^^^^[0m
+  [90m106 |[0m         </div>
+  [90m107 |[0m
+  [90m108 |[0m         {[90m/* Stats row */[0m}
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 14ms (next.js: 6ms, application-code: 7ms)
+⨯ ./components/Hero.tsx:104:17
+Expected '</', got 'jsx text'
+  [90m102 |[0m             >
+  [90m103 |[0m               [33mView[0m [33mPackages[0m
+[31m[1m>[0m [90m104 |[0m             </a>
+  [90m    |[0m                 [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m105 |[0m           </motion.div>
+  [90m    |[0m [31m[1m^^^^^^^^^^[0m
+  [90m106 |[0m         </div>
+  [90m107 |[0m
+  [90m108 |[0m         {[90m/* Stats row */[0m}
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+
+⨯ ./components/Hero.tsx:104:17
+Expected '</', got 'jsx text'
+  [90m102 |[0m             >
+  [90m103 |[0m               [33mView[0m [33mPackages[0m
+[31m[1m>[0m [90m104 |[0m             </a>
+  [90m    |[0m                 [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m105 |[0m           </motion.div>
+  [90m    |[0m [31m[1m^^^^^^^^^^[0m
+  [90m106 |[0m         </div>
+  [90m107 |[0m
+  [90m108 |[0m         {[90m/* Stats row */[0m}
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 16ms (next.js: 8ms, application-code: 8ms)
+ GET / 500 in 21ms (next.js: 13ms, application-code: 9ms)
+[browser] Uncaught Error: ./components/Hero.tsx:104:17
+Expected '</', got 'jsx text'
+  102 |             >
+  103 |               View Packages
+> 104 |             </a>
+      |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 105 |           </motion.div>
+      | ^^^^^^^^^^
+  106 |         </div>
+  107 |
+  108 |         {/* Stats row */}
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Hero.tsx:104:17)
+    at <unknown> (Error: (./components/Hero.tsx:104:17)
+[browser] ./components/Hero.tsx:104:17
+Expected '</', got 'jsx text'
+  102 |             >
+  103 |               View Packages
+> 104 |             </a>
+      |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 105 |           </motion.div>
+      | ^^^^^^^^^^
+  106 |         </div>
+  107 |
+  108 |         {/* Stats row */}
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Hero.tsx:104:17
+Expected '</', got 'jsx text'
+  102 |             >
+  103 |               View Packages
+> 104 |             </a>
+      |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 105 |           </motion.div>
+      | ^^^^^^^^^^
+  106 |         </div>
+  107 |
+  108 |         {/* Stats row */}
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Hero.tsx:104:17
+Expected '</', got 'jsx text'
+  102 |             >
+  103 |               View Packages
+> 104 |             </a>
+      |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 105 |           </motion.div>
+      | ^^^^^^^^^^
+  106 |         </div>
+  107 |
+  108 |         {/* Stats row */}
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Hero.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+✓ Compiled in 27ms
+Image with src "/images/hb-hero.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET / 200 in 145ms (next.js: 43ms, application-code: 103ms)
+✓ Compiled in 23ms
+ GET / 200 in 66ms (next.js: 41ms, application-code: 24ms)
+⚠ Fast Refresh had to perform a full reload due to a runtime error.
+Image with src "/images/hb-hero.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+✓ Compiled in 30ms
+ GET / 200 in 152ms (next.js: 44ms, application-code: 108ms)
+✓ Compiled in 31ms
+ GET / 200 in 68ms (next.js: 37ms, application-code: 31ms)
+✓ Compiled in 28ms
+ GET / 200 in 78ms (next.js: 51ms, application-code: 28ms)
+✓ Compiled in 27ms
+ GET / 200 in 55ms (next.js: 32ms, application-code: 23ms)
+[browser] Image with src "/images/hb-hero.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 25ms
+ GET / 200 in 116ms (next.js: 65ms, application-code: 51ms)
+ GET / 200 in 29ms (next.js: 4ms, application-code: 25ms)
+✓ Compiled in 25ms
+ GET / 200 in 56ms (next.js: 35ms, application-code: 21ms)
+✓ Compiled in 41ms
+ GET / 200 in 62ms (next.js: 42ms, application-code: 20ms)
+Image with src "/images/hb-hero.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET / 200 in 84ms (next.js: 3ms, application-code: 81ms)
+[browser] Image with src "/images/hb-hero.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 29ms
+ GET / 200 in 68ms (next.js: 40ms, application-code: 28ms)
+Image with src "/images/hb-hero.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET / 200 in 113ms (next.js: 3ms, application-code: 110ms)
+[browser] Image with src "/images/hb-hero.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+ GET / 200 in 44ms (next.js: 4ms, application-code: 40ms)
+[browser] Image with src "/images/hb-hero.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 24ms
+ GET / 200 in 51ms (next.js: 34ms, application-code: 17ms)
+✓ Compiled in 24ms
+ GET / 200 in 58ms (next.js: 38ms, application-code: 20ms)
+✓ Compiled in 24ms
+ GET / 200 in 58ms (next.js: 36ms, application-code: 21ms)
+✓ Compiled in 24ms
+ GET / 200 in 64ms (next.js: 43ms, application-code: 21ms)
+✓ Compiled in 42ms
+✓ Compiled in 119ms
+ GET / 200 in 269ms (next.js: 95ms, application-code: 174ms)
+ GET / 200 in 132ms (next.js: 40ms, application-code: 93ms)
+ GET / 200 in 60ms (next.js: 3ms, application-code: 57ms)
+ GET / 200 in 60ms (next.js: 20ms, application-code: 41ms)
+ GET / 200 in 60ms (next.js: 37ms, application-code: 23ms)
+✓ Compiled in 66ms
+ GET / 200 in 88ms (next.js: 53ms, application-code: 35ms)
+Image with src "/images/hb-hero.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET / 200 in 132ms (next.js: 3ms, application-code: 129ms)
+[browser] Image with src "/images/hb-hero.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 28ms
+ GET / 200 in 98ms (next.js: 43ms, application-code: 55ms)
+ GET / 200 in 33ms (next.js: 4ms, application-code: 29ms)
+✓ Compiled in 34ms
+ GET / 200 in 74ms (next.js: 33ms, application-code: 42ms)
+ GET / 200 in 23ms (next.js: 2ms, application-code: 21ms)
+✓ Compiled in 23ms
+ GET / 200 in 94ms (next.js: 42ms, application-code: 52ms)
+ GET / 200 in 27ms (next.js: 3ms, application-code: 24ms)
+✓ Compiled in 48ms
+ GET / 200 in 59ms (next.js: 38ms, application-code: 20ms)
+✓ Compiled in 29ms
+ GET / 200 in 59ms (next.js: 41ms, application-code: 19ms)
+✓ Compiled in 25ms
+ GET / 200 in 75ms (next.js: 46ms, application-code: 29ms)
+✓ Compiled in 36ms
+ GET / 200 in 49ms (next.js: 31ms, application-code: 18ms)
+✓ Compiled in 26ms
+ GET / 200 in 49ms (next.js: 32ms, application-code: 17ms)
+✓ Compiled in 41ms
+ GET / 200 in 48ms (next.js: 31ms, application-code: 18ms)
+✓ Compiled in 47ms
+ GET / 200 in 72ms (next.js: 37ms, application-code: 35ms)
+✓ Compiled in 30ms
+ GET / 200 in 51ms (next.js: 31ms, application-code: 21ms)
+⨯ ./components/Navbar.tsx:120:7
+Expected '</', got ')'
+  [90m118 |[0m           </a>
+  [90m119 |[0m         </div>
+[31m[1m>[0m [90m120 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m121 |[0m     </nav>
+  [90m122 |[0m   );
+  [90m123 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 31ms (next.js: 18ms, application-code: 14ms)
+⨯ ./components/Navbar.tsx:120:7
+Expected '</', got ')'
+  [90m118 |[0m           </a>
+  [90m119 |[0m         </div>
+[31m[1m>[0m [90m120 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m121 |[0m     </nav>
+  [90m122 |[0m   );
+  [90m123 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 13ms (next.js: 6ms, application-code: 7ms)
+⨯ ./components/Navbar.tsx:120:7
+Expected '</', got ')'
+  [90m118 |[0m           </a>
+  [90m119 |[0m         </div>
+[31m[1m>[0m [90m120 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m121 |[0m     </nav>
+  [90m122 |[0m   );
+  [90m123 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 10ms (next.js: 4ms, application-code: 6ms)
+✓ Compiled in 42ms
+[browser] Uncaught Error: ./components/Navbar.tsx:120:7
+Expected '</', got ')'
+  118 |           </a>
+  119 |         </div>
+> 120 |       )}
+      |       ^
+  121 |     </nav>
+  122 |   );
+  123 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:120:7)
+    at <unknown> (Error: (./components/Navbar.tsx:120:7)
+⨯ ./components/Navbar.tsx:120:7
+Expected '</', got ')'
+  [90m118 |[0m           </a>
+  [90m119 |[0m         </div>
+[31m[1m>[0m [90m120 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m121 |[0m     </nav>
+  [90m122 |[0m   );
+  [90m123 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 22ms (next.js: 14ms, application-code: 8ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:120:7
+Expected '</', got ')'
+  118 |           </a>
+  119 |         </div>
+> 120 |       )}
+      |       ^
+  121 |     </nav>
+  122 |   );
+  123 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:120:7)
+    at <unknown> (Error: (./components/Navbar.tsx:120:7)
+⨯ ./components/Navbar.tsx:120:7
+Expected '</', got ')'
+  [90m118 |[0m           </a>
+  [90m119 |[0m         </div>
+[31m[1m>[0m [90m120 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m121 |[0m     </nav>
+  [90m122 |[0m   );
+  [90m123 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 23ms (next.js: 15ms, application-code: 8ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:120:7
+Expected '</', got ')'
+  118 |           </a>
+  119 |         </div>
+> 120 |       )}
+      |       ^
+  121 |     </nav>
+  122 |   );
+  123 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:120:7)
+    at <unknown> (Error: (./components/Navbar.tsx:120:7)
+⨯ ./components/Navbar.tsx:120:7
+Expected '</', got ')'
+  [90m118 |[0m           </a>
+  [90m119 |[0m         </div>
+[31m[1m>[0m [90m120 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m121 |[0m     </nav>
+  [90m122 |[0m   );
+  [90m123 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 22ms (next.js: 14ms, application-code: 7ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:120:7
+Expected '</', got ')'
+  118 |           </a>
+  119 |         </div>
+> 120 |       )}
+      |       ^
+  121 |     </nav>
+  122 |   );
+  123 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:120:7)
+    at <unknown> (Error: (./components/Navbar.tsx:120:7)
+⨯ ./components/Navbar.tsx:120:7
+Expected '</', got ')'
+  [90m118 |[0m           </a>
+  [90m119 |[0m         </div>
+[31m[1m>[0m [90m120 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m121 |[0m     </nav>
+  [90m122 |[0m   );
+  [90m123 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 19ms (next.js: 12ms, application-code: 7ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:120:7
+Expected '</', got ')'
+  118 |           </a>
+  119 |         </div>
+> 120 |       )}
+      |       ^
+  121 |     </nav>
+  122 |   );
+  123 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:120:7)
+    at <unknown> (Error: (./components/Navbar.tsx:120:7)
+⨯ ./components/Navbar.tsx:120:7
+Expected '</', got ')'
+  [90m118 |[0m           </a>
+  [90m119 |[0m         </div>
+[31m[1m>[0m [90m120 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m121 |[0m     </nav>
+  [90m122 |[0m   );
+  [90m123 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 28ms (next.js: 16ms, application-code: 11ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:120:7
+Expected '</', got ')'
+  118 |           </a>
+  119 |         </div>
+> 120 |       )}
+      |       ^
+  121 |     </nav>
+  122 |   );
+  123 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:120:7)
+    at <unknown> (Error: (./components/Navbar.tsx:120:7)
+⨯ ./components/Navbar.tsx:120:7
+Expected '</', got ')'
+  [90m118 |[0m           </a>
+  [90m119 |[0m         </div>
+[31m[1m>[0m [90m120 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m121 |[0m     </nav>
+  [90m122 |[0m   );
+  [90m123 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 23ms (next.js: 12ms, application-code: 11ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:120:7
+Expected '</', got ')'
+  118 |           </a>
+  119 |         </div>
+> 120 |       )}
+      |       ^
+  121 |     </nav>
+  122 |   );
+  123 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:120:7)
+    at <unknown> (Error: (./components/Navbar.tsx:120:7)
+⨯ ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  [90m124 |[0m           </a>
+  [90m125 |[0m         </div>
+[31m[1m>[0m [90m126 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m127 |[0m     </nav>
+  [90m128 |[0m   );
+  [90m129 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 22ms (next.js: 14ms, application-code: 8ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:126:7)
+    at <unknown> (Error: (./components/Navbar.tsx:126:7)
+⨯ ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  [90m124 |[0m           </a>
+  [90m125 |[0m         </div>
+[31m[1m>[0m [90m126 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m127 |[0m     </nav>
+  [90m128 |[0m   );
+  [90m129 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 23ms (next.js: 13ms, application-code: 10ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:126:7)
+    at <unknown> (Error: (./components/Navbar.tsx:126:7)
+⨯ ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  [90m124 |[0m           </a>
+  [90m125 |[0m         </div>
+[31m[1m>[0m [90m126 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m127 |[0m     </nav>
+  [90m128 |[0m   );
+  [90m129 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 23ms (next.js: 13ms, application-code: 10ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:126:7)
+    at <unknown> (Error: (./components/Navbar.tsx:126:7)
+[browser] ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+⨯ ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  [90m124 |[0m           </a>
+  [90m125 |[0m         </div>
+[31m[1m>[0m [90m126 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m127 |[0m     </nav>
+  [90m128 |[0m   );
+  [90m129 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 19ms (next.js: 7ms, application-code: 12ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:126:7)
+    at <unknown> (Error: (./components/Navbar.tsx:126:7)
+[browser] ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+⨯ ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  [90m124 |[0m           </a>
+  [90m125 |[0m         </div>
+[31m[1m>[0m [90m126 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m127 |[0m     </nav>
+  [90m128 |[0m   );
+  [90m129 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 13ms (next.js: 5ms, application-code: 7ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:126:7)
+    at <unknown> (Error: (./components/Navbar.tsx:126:7)
+[browser] ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+⨯ ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  [90m124 |[0m           </a>
+  [90m125 |[0m         </div>
+[31m[1m>[0m [90m126 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m127 |[0m     </nav>
+  [90m128 |[0m   );
+  [90m129 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 24ms (next.js: 15ms, application-code: 9ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:126:7)
+    at <unknown> (Error: (./components/Navbar.tsx:126:7)
+⨯ ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  [90m124 |[0m           </a>
+  [90m125 |[0m         </div>
+[31m[1m>[0m [90m126 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m127 |[0m     </nav>
+  [90m128 |[0m   );
+  [90m129 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 20ms (next.js: 13ms, application-code: 7ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:126:7)
+    at <unknown> (Error: (./components/Navbar.tsx:126:7)
+⨯ ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  [90m124 |[0m           </a>
+  [90m125 |[0m         </div>
+[31m[1m>[0m [90m126 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m127 |[0m     </nav>
+  [90m128 |[0m   );
+  [90m129 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 22ms (next.js: 14ms, application-code: 8ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:126:7)
+    at <unknown> (Error: (./components/Navbar.tsx:126:7)
+[browser] ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+⨯ ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  [90m124 |[0m           </a>
+  [90m125 |[0m         </div>
+[31m[1m>[0m [90m126 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m127 |[0m     </nav>
+  [90m128 |[0m   );
+  [90m129 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 13ms (next.js: 6ms, application-code: 7ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:126:7)
+    at <unknown> (Error: (./components/Navbar.tsx:126:7)
+[browser] ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+⨯ ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  [90m124 |[0m           </a>
+  [90m125 |[0m         </div>
+[31m[1m>[0m [90m126 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m127 |[0m     </nav>
+  [90m128 |[0m   );
+  [90m129 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 22ms (next.js: 14ms, application-code: 9ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:126:7)
+    at <unknown> (Error: (./components/Navbar.tsx:126:7)
+⨯ ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  [90m124 |[0m           </a>
+  [90m125 |[0m         </div>
+[31m[1m>[0m [90m126 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m127 |[0m     </nav>
+  [90m128 |[0m   );
+  [90m129 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 20ms (next.js: 12ms, application-code: 7ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:126:7)
+    at <unknown> (Error: (./components/Navbar.tsx:126:7)
+⨯ ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  [90m124 |[0m           </a>
+  [90m125 |[0m         </div>
+[31m[1m>[0m [90m126 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m127 |[0m     </nav>
+  [90m128 |[0m   );
+  [90m129 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 22ms (next.js: 14ms, application-code: 8ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:126:7)
+    at <unknown> (Error: (./components/Navbar.tsx:126:7)
+⨯ ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  [90m124 |[0m           </a>
+  [90m125 |[0m         </div>
+[31m[1m>[0m [90m126 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m127 |[0m     </nav>
+  [90m128 |[0m   );
+  [90m129 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 23ms (next.js: 15ms, application-code: 8ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:126:7)
+    at <unknown> (Error: (./components/Navbar.tsx:126:7)
+⨯ ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  [90m124 |[0m           </a>
+  [90m125 |[0m         </div>
+[31m[1m>[0m [90m126 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m127 |[0m     </nav>
+  [90m128 |[0m   );
+  [90m129 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 24ms (next.js: 17ms, application-code: 7ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:126:7)
+    at <unknown> (Error: (./components/Navbar.tsx:126:7)
+⨯ ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  [90m124 |[0m           </a>
+  [90m125 |[0m         </div>
+[31m[1m>[0m [90m126 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m127 |[0m     </nav>
+  [90m128 |[0m   );
+  [90m129 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 23ms (next.js: 14ms, application-code: 9ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:126:7)
+    at <unknown> (Error: (./components/Navbar.tsx:126:7)
+⨯ ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  [90m124 |[0m           </a>
+  [90m125 |[0m         </div>
+[31m[1m>[0m [90m126 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m127 |[0m     </nav>
+  [90m128 |[0m   );
+  [90m129 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 21ms (next.js: 13ms, application-code: 8ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:126:7)
+    at <unknown> (Error: (./components/Navbar.tsx:126:7)
+⨯ ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  [90m124 |[0m           </a>
+  [90m125 |[0m         </div>
+[31m[1m>[0m [90m126 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m127 |[0m     </nav>
+  [90m128 |[0m   );
+  [90m129 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+
+./components/Order.tsx:201:24
+Expected '</', got 'jsx text'
+  [90m199 |[0m               </form>
+  [90m200 |[0m             )}
+[31m[1m>[0m [90m201 |[0m           </motion.div>
+  [90m    |[0m                        [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m202 |[0m         </div>
+  [90m    |[0m [31m[1m^^^^^^^^[0m
+  [90m203 |[0m       </div>
+  [90m204 |[0m     </section>
+  [90m205 |[0m   );
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Order.tsx
+    ./app/page.tsx
+
+
+⨯ ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  [90m124 |[0m           </a>
+  [90m125 |[0m         </div>
+[31m[1m>[0m [90m126 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m127 |[0m     </nav>
+  [90m128 |[0m   );
+  [90m129 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+
+./components/Order.tsx:201:24
+Expected '</', got 'jsx text'
+  [90m199 |[0m               </form>
+  [90m200 |[0m             )}
+[31m[1m>[0m [90m201 |[0m           </motion.div>
+  [90m    |[0m                        [31m[1m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[31m[1m>[0m [90m202 |[0m         </div>
+  [90m    |[0m [31m[1m^^^^^^^^[0m
+  [90m203 |[0m       </div>
+  [90m204 |[0m     </section>
+  [90m205 |[0m   );
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Order.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 20ms (next.js: 14ms, application-code: 6ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:126:7)
+    at <unknown> (Error: (./components/Navbar.tsx:126:7)
+⨯ ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  [90m124 |[0m           </a>
+  [90m125 |[0m         </div>
+[31m[1m>[0m [90m126 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m127 |[0m     </nav>
+  [90m128 |[0m   );
+  [90m129 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 29ms (next.js: 21ms, application-code: 7ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:126:7)
+    at <unknown> (Error: (./components/Navbar.tsx:126:7)
+⨯ ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  [90m124 |[0m           </a>
+  [90m125 |[0m         </div>
+[31m[1m>[0m [90m126 |[0m       )}
+  [90m    |[0m       [31m[1m^[0m
+  [90m127 |[0m     </nav>
+  [90m128 |[0m   );
+  [90m129 |[0m }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+ GET / 500 in 27ms (next.js: 16ms, application-code: 11ms)
+[browser] Uncaught Error: ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx
+
+
+    at <unknown> (Error: ./components/Navbar.tsx:126:7)
+    at <unknown> (Error: (./components/Navbar.tsx:126:7)
+[browser] ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:126:7
+Expected '</', got ')'
+  124 |           </a>
+  125 |         </div>
+> 126 |       )}
+      |       ^
+  127 |     </nav>
+  128 |   );
+  129 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:128:7
+Expected '</', got ')'
+  126 |           </a>
+  127 |         </div>
+> 128 |       )}
+      |       ^
+  129 |     </nav>
+  130 |   );
+  131 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:128:7
+Expected '</', got ')'
+  126 |           </a>
+  127 |         </div>
+> 128 |       )}
+      |       ^
+  129 |     </nav>
+  130 |   );
+  131 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:128:7
+Expected '</', got ')'
+  126 |           </a>
+  127 |         </div>
+> 128 |       )}
+      |       ^
+  129 |     </nav>
+  130 |   );
+  131 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:128:7
+Expected '</', got ')'
+  126 |           </a>
+  127 |         </div>
+> 128 |       )}
+      |       ^
+  129 |     </nav>
+  130 |   );
+  131 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:128:7
+Expected '</', got ')'
+  126 |           </a>
+  127 |         </div>
+> 128 |       )}
+      |       ^
+  129 |     </nav>
+  130 |   );
+  131 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:128:7
+Expected '</', got ')'
+  126 |           </a>
+  127 |         </div>
+> 128 |       )}
+      |       ^
+  129 |     </nav>
+  130 |   );
+  131 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:128:7
+Expected '</', got ')'
+  126 |           </a>
+  127 |         </div>
+> 128 |       )}
+      |       ^
+  129 |     </nav>
+  130 |   );
+  131 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:128:7
+Expected '</', got ')'
+  126 |           </a>
+  127 |         </div>
+> 128 |       )}
+      |       ^
+  129 |     </nav>
+  130 |   );
+  131 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./components/Navbar.tsx:128:7
+Expected '</', got ')'
+  126 |           </a>
+  127 |         </div>
+> 128 |       )}
+      |       ^
+  129 |     </nav>
+  130 |   );
+  131 | }
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./components/Navbar.tsx
+    ./app/page.tsx 
+    at handleErrors (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+Image with src "/images/hb-hero.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET / 200 in 210ms (next.js: 64ms, application-code: 146ms)
+[browser] Image with src "/images/hb-hero.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+ GET / 200 in 57ms (next.js: 3ms, application-code: 54ms)
+[browser] Image with src "/images/hb-hero.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+✓ Compiled in 301ms
+Image with src "/images/hb-hero.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET / 200 in 186ms (next.js: 137ms, application-code: 49ms)
+ GET / 200 in 317ms (next.js: 84ms, application-code: 233ms)
+ GET / 200 in 27ms (next.js: 4ms, application-code: 23ms)
+ GET / 200 in 199ms (next.js: 52ms, application-code: 147ms)
+[browser] Image with src "/images/hb-hero.png" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities (file://C:/Users/Jasper Dizon/Documents/eventHostingWebHosting/Coffee Shops/but-first-coffee/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+[?25h

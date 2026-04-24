@@ -61,7 +61,7 @@ const REMINDERS = [
 
 export default function Story() {
   return (
-    <section id="story" className="py-24 border-t border-[#1a1a1a]" style={{ background: "#000000" }}>
+    <section id="story" className="py-24 border-t border-[#321a10]" style={{ background: "#241610" }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
@@ -72,18 +72,18 @@ export default function Story() {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#19ba97" }}>
+            <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#B8794B" }}>
               Coffee Cart Packages
             </p>
             <h2
               className="font-bold mb-6 leading-tight"
-              style={{ fontSize: "clamp(2rem, 4vw, 3rem)", color: "#ffffff", letterSpacing: "-0.02em" }}
+              style={{ fontSize: "clamp(2rem, 4vw, 3rem)", color: "#EAC8A8", letterSpacing: "-0.02em" }}
             >
               Bring Hey Brew
               <br />
-              <span style={{ color: "#dca47d" }}>to your event.</span>
+              <span style={{ color: "#B8794B" }}>to your event.</span>
             </h2>
-            <p className="text-sm leading-relaxed mb-4" style={{ color: "#888888" }}>
+            <p className="text-sm leading-relaxed mb-4" style={{ color: "#a07858" }}>
               Book our coffee cart for your next corporate event, wedding, or celebration.
               All packages include set-up, booth, and full manpower — ready to serve.
             </p>
@@ -92,19 +92,19 @@ export default function Story() {
             <div className="space-y-3 mb-8">
               {REMINDERS.map((r, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <span className="mt-1 shrink-0 w-1.5 h-1.5 rounded-full" style={{ background: "#dca47d" }} />
-                  <p className="text-xs leading-relaxed" style={{ color: "#888888" }}>{r}</p>
+                  <span className="mt-1 shrink-0 w-1.5 h-1.5 rounded-full" style={{ background: "#B8794B" }} />
+                  <p className="text-xs leading-relaxed" style={{ color: "#a07858" }}>{r}</p>
                 </div>
               ))}
             </div>
 
             <motion.a
               href="#order"
-              className="inline-flex items-center gap-2 px-7 py-3 text-sm font-semibold active:scale-[0.95] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dca47d]"
-              style={{ background: "#dca47d", color: "#000000", borderRadius: "30px" }}
-              whileHover={{ y: -4, boxShadow: "0 8px 24px rgba(220,164,125,0.35)", transition: { duration: 0.2, ease: "easeOut" } }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#c4895f"; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#dca47d"; }}
+              className="inline-flex items-center gap-2 px-7 py-3 text-sm font-semibold active:scale-[0.95] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8794B]"
+              style={{ background: "#B8794B", color: "#241610", borderRadius: "30px" }}
+              whileHover={{ y: -4, boxShadow: "0 8px 24px rgba(184,121,75,0.35)", transition: { duration: 0.2, ease: "easeOut" } }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#9e6038"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#B8794B"; }}
             >
               Book a Package →
             </motion.a>
@@ -117,19 +117,20 @@ export default function Story() {
                 key={pkg.name}
                 className="relative flex flex-col rounded-xl p-5"
                 style={{
-                  background: pkg.highlight ? "rgba(220,164,125,0.08)" : "#111111",
-                  border: pkg.highlight ? "1px solid rgba(220,164,125,0.35)" : "1px solid #2a2a2a",
+                  background: pkg.highlight ? "rgba(184,121,75,0.1)" : "#4C2D1F",
+                  border: pkg.highlight ? "1px solid rgba(184,121,75,0.4)" : "1px solid #7A4A2E",
                 }}
                 initial={{ opacity: 0, y: 28 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
+                whileHover={{ scale: 1.04, transition: { duration: 0.1, ease: "easeOut" } }}
               >
                 {/* Top badge */}
                 {pkg.badge && (
                   <div
                     className="absolute -top-3 left-1/2 -translate-x-1/2 text-xs px-3 py-1 rounded-full font-semibold whitespace-nowrap"
-                    style={{ background: "#dca47d", color: "#000000", letterSpacing: "0.05em" }}
+                    style={{ background: "#B8794B", color: "#241610", letterSpacing: "0.05em" }}
                   >
                     {pkg.badge}
                   </div>
@@ -138,14 +139,14 @@ export default function Story() {
                 {/* Package name */}
                 <p
                   className="text-xs font-semibold mb-4 uppercase tracking-widest"
-                  style={{ color: pkg.highlight ? "#dca47d" : "#888888" }}
+                  style={{ color: pkg.highlight ? "#B8794B" : "#a07858" }}
                 >
                   {pkg.name}
                 </p>
 
                 {/* Price */}
                 <div className="flex items-baseline gap-1.5 mb-1">
-                  <span className="text-3xl font-bold" style={{ color: "#ffffff" }}>{pkg.price}</span>
+                  <span className="text-3xl font-bold" style={{ color: "#EAC8A8" }}>{pkg.price}</span>
                 </div>
 
                 {/* Cup count pill */}
@@ -153,22 +154,22 @@ export default function Story() {
                   className="flex items-center gap-2 mb-4 px-3 py-1.5 rounded-lg w-fit"
                   style={{ background: "rgba(255,255,255,0.04)" }}
                 >
-                  <span className="text-sm font-semibold" style={{ color: pkg.highlight ? "#dca47d" : "#888888" }}>
+                  <span className="text-sm font-semibold" style={{ color: pkg.highlight ? "#B8794B" : "#a07858" }}>
                     {pkg.cups}
                   </span>
                 </div>
 
                 {/* Tagline */}
-                <p className="text-xs mb-4" style={{ color: "#666666" }}>{pkg.tagline}</p>
+                <p className="text-xs mb-4" style={{ color: "#8a6040" }}>{pkg.tagline}</p>
 
                 {/* Features */}
                 <ul className="space-y-2 mb-6 flex-1">
                   {pkg.features.map((f) => (
                     <li key={f} className="flex items-start gap-2.5">
-                      <svg viewBox="0 0 24 24" fill="none" stroke={pkg.highlight ? "#dca47d" : "#555555"} strokeWidth="2" className="w-3.5 h-3.5 mt-0.5 shrink-0" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke={pkg.highlight ? "#B8794B" : "#7A4A2E"} strokeWidth="2" className="w-3.5 h-3.5 mt-0.5 shrink-0" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                       </svg>
-                      <span className="text-xs" style={{ color: "#888888" }}>{f}</span>
+                      <span className="text-xs" style={{ color: "#a07858" }}>{f}</span>
                     </li>
                   ))}
                 </ul>
@@ -176,19 +177,19 @@ export default function Story() {
                 {/* CTA */}
                 <a
                   href="#order"
-                  className="mt-auto block text-xs py-2.5 px-4 rounded-lg font-semibold text-center transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#dca47d]"
+                  className="mt-auto block text-xs py-2.5 px-4 rounded-lg font-semibold text-center transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8794B]"
                   style={
                     pkg.highlight
-                      ? { background: "#dca47d", color: "#000000" }
-                      : { background: "rgba(255,255,255,0.05)", color: "#888888", border: "1px solid #2a2a2a" }
+                      ? { background: "#B8794B", color: "#241610" }
+                      : { background: "rgba(255,255,255,0.04)", color: "#a07858", border: "1px solid #7A4A2E" }
                   }
                   onMouseEnter={(e) => {
-                    if (pkg.highlight) { (e.currentTarget as HTMLAnchorElement).style.background = "#c4895f"; }
-                    else { (e.currentTarget as HTMLAnchorElement).style.color = "#ffffff"; (e.currentTarget as HTMLAnchorElement).style.borderColor = "#444444"; }
+                    if (pkg.highlight) { (e.currentTarget as HTMLAnchorElement).style.background = "#9e6038"; }
+                    else { (e.currentTarget as HTMLAnchorElement).style.color = "#EAC8A8"; (e.currentTarget as HTMLAnchorElement).style.borderColor = "#B8794B"; }
                   }}
                   onMouseLeave={(e) => {
-                    if (pkg.highlight) { (e.currentTarget as HTMLAnchorElement).style.background = "#dca47d"; }
-                    else { (e.currentTarget as HTMLAnchorElement).style.color = "#888888"; (e.currentTarget as HTMLAnchorElement).style.borderColor = "#2a2a2a"; }
+                    if (pkg.highlight) { (e.currentTarget as HTMLAnchorElement).style.background = "#B8794B"; }
+                    else { (e.currentTarget as HTMLAnchorElement).style.color = "#a07858"; (e.currentTarget as HTMLAnchorElement).style.borderColor = "#7A4A2E"; }
                   }}
                 >
                   {pkg.cta}

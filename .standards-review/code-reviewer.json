@@ -1,0 +1,95 @@
+{
+  "role": "code-reviewer",
+  "lastChecked": "2026-04-23T11:30:00.000Z",
+  "summary": "0 open, 8 resolved",
+  "findings": [
+    {
+      "id": "cr-001",
+      "severity": "issue",
+      "title": "Inquiry form submits no data — onSubmit only calls preventDefault",
+      "description": "The form's onSubmit handler is `(e) => e.preventDefault()` with no state, no fetch, and no side-effects, so submitted inquiries are silently discarded. Wire up controlled inputs and POST the payload to an API route or third-party service (e.g. Formspree, a Next.js route handler), then show a success/error message to the user.",
+      "file": "components/Order.tsx",
+      "line": 85,
+      "status": "resolved",
+      "createdAt": "2026-04-23T00:00:00.000Z",
+      "resolvedAt": "2026-04-23T10:37:54.926Z"
+    },
+    {
+      "id": "cr-002",
+      "severity": "issue",
+      "title": "No input validation on any form field before submission",
+      "description": "All five form fields (first name, last name, mobile, email, target location) are uncontrolled inputs with no `required` attribute, no pattern constraint, and no client-side validation logic — a blank or malformed form can be 'submitted' without feedback. Add `required` attributes at minimum, validate the `tel` field against a Philippine mobile pattern (e.g. `/^(\\+?63|0)9\\d{9}$/`), and validate email format before allowing submission.",
+      "file": "components/Order.tsx",
+      "line": 86,
+      "status": "resolved",
+      "createdAt": "2026-04-23T00:00:00.000Z",
+      "resolvedAt": "2026-04-23T10:37:54.926Z"
+    },
+    {
+      "id": "cr-003",
+      "severity": "issue",
+      "title": "select options are missing value attributes — capital range is unreadable by code",
+      "description": "The four `<option>` elements for 'Available Capital' omit the `value` attribute, so any future submission logic would receive the display string (including peso symbols) rather than a clean programmatic key. Add explicit values such as `value=\"below_500k\"`, `value=\"500k_1m\"`, etc.",
+      "file": "components/Order.tsx",
+      "line": 111,
+      "status": "resolved",
+      "createdAt": "2026-04-23T00:00:00.000Z",
+      "resolvedAt": "2026-04-23T10:37:54.926Z"
+    },
+    {
+      "id": "cr-004",
+      "severity": "issue",
+      "title": "Malformed CSS value in inline style — boxShadow contains a literal underscore",
+      "description": "`boxShadow: \"0 4px_24px rgba(0,0,0,0.5)\"` uses an underscore instead of a space between `4px` and `24px`, making the value invalid and silently ignored by the browser. Change it to `\"0 4px 24px rgba(0,0,0,0.5)\"`.",
+      "file": "components/Navbar.tsx",
+      "line": 29,
+      "status": "resolved",
+      "createdAt": "2026-04-23T00:00:00.000Z",
+      "resolvedAt": "2026-04-23T10:35:08.059Z"
+    },
+    {
+      "id": "cr-005",
+      "severity": "issue",
+      "title": "Hero stat '50+ Active Branches' is a hardcoded magic value with no source",
+      "description": "The branch count is a hardcoded string literal in a data array; if the real number changes it will silently fall out of date and mislead prospective franchisees. Move it to a shared constants file or a CMS field so it can be updated in one place, and note the source/date it was accurate.",
+      "file": "components/Hero.tsx",
+      "line": 7,
+      "status": "resolved",
+      "createdAt": "2026-04-23T00:00:00.000Z",
+      "resolvedAt": "2026-04-23T11:30:00.000Z"
+    },
+    {
+      "id": "cr-006",
+      "severity": "issue",
+      "title": "Story.tsx component renders as id='packages' section but is named Story — misleading nav anchor",
+      "description": "The `<section>` has `id=\"packages\"` and the right-column cards container has `id=\"story\"`, but the Navbar link labelled 'Our Story' points to `#story` which resolves to an inner `<div>`, not a top-level section — scroll behavior will be off and screen readers will land in the middle of a card list. Give the section its own correct `id=\"story\"` and rename or remove the inner div id.",
+      "file": "components/Story.tsx",
+      "line": 19,
+      "status": "resolved",
+      "createdAt": "2026-04-23T00:00:00.000Z",
+      "resolvedAt": "2026-04-23T10:35:08.059Z"
+    },
+    {
+      "id": "cr-007",
+      "severity": "suggestion",
+      "title": "Gallery image sizes attribute does not account for col-span-2 images",
+      "description": "All 12 images share `sizes=\"(max-width: 768px) 50vw, 25vw\"` even though `sample1.jpg` spans 2 columns and `sample8.jpg` spans 2 columns — both should use `50vw` on desktop. This causes Next.js Image to generate and serve under-sized srcset candidates for those images. Set per-image `sizes` values matching their actual rendered width.",
+      "file": "components/Gallery.tsx",
+      "line": 69,
+      "status": "resolved",
+      "createdAt": "2026-04-23T00:00:00.000Z",
+      "resolvedAt": "2026-04-23T10:41:53.282Z"
+    },
+    {
+      "id": "cr-008",
+      "severity": "suggestion",
+      "title": "MDI icon font loaded from CDN via layout.tsx head — no fallback or integrity hash",
+      "description": "The Material Design Icons stylesheet is injected via a `<link>` in the `<head>` with no `integrity` or `crossorigin` attribute; a CDN compromise or network failure will silently break all icon rendering. Add a Subresource Integrity hash (`integrity=\"sha384-...\"`) and `crossOrigin=\"anonymous\"`, or bundle the font locally.",
+      "file": "app/layout.tsx",
+      "line": 24,
+      "status": "resolved",
+      "createdAt": "2026-04-23T00:00:00.000Z",
+      "resolvedAt": "2026-04-23T11:30:00.000Z"
+    }
+  ]
+}
