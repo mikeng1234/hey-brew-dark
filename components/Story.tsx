@@ -55,8 +55,8 @@ export default function Story() {
                 key={pkg.name}
                 className="relative flex flex-col rounded-xl p-5"
                 style={{
-                  background: pkg.highlight ? "rgba(184,148,123,0.12)" : "#f7ede6",
-                  border: pkg.highlight ? "1px solid rgba(184,148,123,0.5)" : "1px solid #dcc8b5",
+                  background: pkg.highlight ? "#4A2F23" : "#f7ede6",
+                  border: pkg.highlight ? "1px solid #B8947B" : "1px solid #dcc8b5",
                 }}
                 initial={{ opacity: 0, y: 28 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
@@ -72,14 +72,14 @@ export default function Story() {
                 <p className="text-xs font-semibold mb-4 uppercase tracking-widest" style={{ color: pkg.highlight ? "#B8947B" : "#9a7060" }}>{pkg.name}</p>
 
                 <div className="flex items-baseline gap-1.5 mb-1">
-                  <span className="text-3xl font-bold" style={{ color: "#4A2F23" }}>{pkg.price}</span>
+                  <span className="text-3xl font-bold" style={{ color: pkg.highlight ? "#FFF9F2" : "#4A2F23" }}>{pkg.price}</span>
                 </div>
 
-                <div className="flex items-center gap-2 mb-4 px-3 py-1.5 rounded-lg w-fit" style={{ background: "rgba(74,47,35,0.06)" }}>
-                  <span className="text-sm font-semibold" style={{ color: pkg.highlight ? "#B8947B" : "#7A5644" }}>{pkg.cups}</span>
+                <div className="flex items-center gap-2 mb-4 px-3 py-1.5 rounded-lg w-fit" style={{ background: pkg.highlight ? "rgba(255,255,255,0.1)" : "rgba(74,47,35,0.06)" }}>
+                  <span className="text-sm font-semibold" style={{ color: pkg.highlight ? "#FFF9F2" : "#7A5644" }}>{pkg.cups}</span>
                 </div>
 
-                <p className="text-xs mb-4" style={{ color: "#9a7060" }}>{pkg.tagline}</p>
+                <p className="text-xs mb-4" style={{ color: pkg.highlight ? "#E6D3C2" : "#9a7060" }}>{pkg.tagline}</p>
 
                 <ul className="space-y-2 mb-6 flex-1">
                   {pkg.features.map((f) => (
@@ -87,7 +87,7 @@ export default function Story() {
                       <svg viewBox="0 0 24 24" fill="none" stroke={pkg.highlight ? "#B8947B" : "#9a7060"} strokeWidth="2" className="w-3.5 h-3.5 mt-0.5 shrink-0" aria-hidden="true">
                         <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                       </svg>
-                      <span className="text-xs" style={{ color: "#7A5644" }}>{f}</span>
+                      <span className="text-xs" style={{ color: pkg.highlight ? "#E6D3C2" : "#7A5644" }}>{f}</span>
                     </li>
                   ))}
                 </ul>
