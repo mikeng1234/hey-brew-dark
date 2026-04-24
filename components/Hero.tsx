@@ -6,55 +6,43 @@ const BRANCH_COUNT = "50+";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden" style={{ background: "#241610" }}>
-      {/* Hero video */}
+    <section className="relative min-h-screen flex items-center overflow-hidden" style={{ background: "#4A2F23" }}>
       <div className="absolute inset-0 z-0">
         <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          aria-hidden="true"
+          autoPlay muted loop playsInline aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover object-center"
           onError={(e) => { (e.currentTarget as HTMLVideoElement).style.opacity = "0"; }}
         >
           <source src="/videos/hbcoffee2.mp4" type="video/mp4" />
         </video>
-        {/* Dark scrim */}
-        <div className="absolute inset-0 bg-black/65" />
+        <div className="absolute inset-0 bg-black/55" />
       </div>
 
       <div className="relative z-20 max-w-7xl mx-auto px-6 w-full pt-40 pb-20">
         <div className="max-w-3xl">
-          {/* Eyebrow */}
           <motion.p
             className="text-xs font-semibold tracking-[0.2em] uppercase mb-6"
-            style={{ color: "#B8794B" }}
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
+            style={{ color: "#B8947B" }}
+            initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
             Open for Franchise
           </motion.p>
 
-          {/* Headline */}
           <motion.h1
             className="font-bold leading-none mb-6"
-            style={{ fontSize: "clamp(3rem, 8vw, 6rem)", color: "#EAC8A8", letterSpacing: "-0.02em" }}
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
+            style={{ fontSize: "clamp(3rem, 8vw, 6rem)", color: "#FFF9F2", letterSpacing: "-0.02em" }}
+            initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             Hey Brew{" "}
-            <span style={{ color: "#B8794B" }}>Cafe PH.</span>
+            <span style={{ color: "#B8947B" }}>Cafe PH.</span>
           </motion.h1>
 
-          {/* Subhead */}
           <motion.p
             className="text-base leading-relaxed mb-4 max-w-xl"
-            style={{ color: "#EAC8A8", fontSize: "clamp(1.1rem, 2vw, 1.4rem)", fontWeight: 600 }}
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
+            style={{ color: "#FFF9F2", fontSize: "clamp(1.1rem, 2vw, 1.4rem)", fontWeight: 600 }}
+            initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
           >
             A Modern Heritage Brew.
@@ -62,46 +50,43 @@ export default function Hero() {
 
           <motion.p
             className="text-base leading-relaxed mb-10 max-w-xl"
-            style={{ color: "#a07858", textShadow: "0 1px 12px rgba(0,0,0,0.8), 0 2px 24px rgba(0,0,0,0.6)" }}
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
+            style={{ color: "#E6D3C2", textShadow: "0 1px 12px rgba(0,0,0,0.6)" }}
+            initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
           >
             Combining artisanal coffee and premium milktea under one proven brand.
             A business model built for the Philippine market — now open nationwide.
           </motion.p>
 
-          {/* CTAs */}
           <motion.div
             className="flex flex-col sm:flex-row gap-4"
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.55 }}
           >
             <motion.a
               href="#order"
-              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-sm font-semibold active:scale-[0.95] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8794B]"
-              style={{ background: "#B8794B", color: "#241610", borderRadius: "30px" }}
-              whileHover={{ y: -4, boxShadow: "0 8px 24px rgba(184,121,75,0.35)", transition: { duration: 0.2, ease: "easeOut" } }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#9e6038"; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#B8794B"; }}
+              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-sm font-semibold active:scale-[0.95] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8947B]"
+              style={{ background: "#B8947B", color: "#4A2F23", borderRadius: "30px" }}
+              whileHover={{ y: -4, boxShadow: "0 8px 24px rgba(184,148,123,0.4)", transition: { duration: 0.2, ease: "easeOut" } }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#9e7a5e"; }}
+              onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.background = "#B8947B"; }}
             >
               Start Your Journey
             </motion.a>
             <motion.a
               href="#packages"
-              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-sm font-semibold active:scale-[0.95] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8794B]"
-              style={{ border: "1px solid #7A4A2E", color: "#a07858", borderRadius: "30px" }}
-              whileHover={{ y: -4, boxShadow: "0 8px 24px rgba(0,0,0,0.4)", transition: { duration: 0.2, ease: "easeOut" } }}
+              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-sm font-semibold active:scale-[0.95] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8947B]"
+              style={{ border: "1px solid #9a7060", color: "#E6D3C2", borderRadius: "30px" }}
+              whileHover={{ y: -4, boxShadow: "0 8px 24px rgba(0,0,0,0.3)", transition: { duration: 0.2, ease: "easeOut" } }}
               onMouseEnter={(e) => {
                 const el = e.currentTarget as HTMLAnchorElement;
-                el.style.borderColor = "#B8794B";
-                el.style.color = "#B8794B";
+                el.style.borderColor = "#B8947B";
+                el.style.color = "#FFF9F2";
               }}
               onMouseLeave={(e) => {
                 const el = e.currentTarget as HTMLAnchorElement;
-                el.style.borderColor = "#7A4A2E";
-                el.style.color = "#a07858";
+                el.style.borderColor = "#9a7060";
+                el.style.color = "#E6D3C2";
               }}
             >
               View Packages
@@ -109,11 +94,9 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Stats row */}
         <motion.div
           className="mt-20 flex flex-wrap gap-10"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.7 }}
         >
           {[
@@ -122,16 +105,15 @@ export default function Hero() {
             { value: "Nationwide", label: "Franchise Coverage" },
           ].map((s) => (
             <div key={s.label}>
-              <p className="text-3xl font-bold" style={{ color: "#B8794B" }}>{s.value}</p>
-              <p className="text-xs mt-0.5" style={{ color: "#8a6040" }}>{s.label}</p>
+              <p className="text-3xl font-bold" style={{ color: "#B8947B" }}>{s.value}</p>
+              <p className="text-xs mt-0.5" style={{ color: "#c4a890" }}>{s.label}</p>
             </div>
           ))}
         </motion.div>
       </div>
 
-      {/* Bottom fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 z-10"
-        style={{ background: "linear-gradient(to bottom, transparent, #241610)" }} />
+        style={{ background: "linear-gradient(to bottom, transparent, #4A2F23)" }} />
     </section>
   );
 }

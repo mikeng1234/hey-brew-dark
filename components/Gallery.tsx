@@ -23,7 +23,7 @@ const PHOTOS = [
 
 export default function Gallery() {
   return (
-    <section className="py-24 border-t border-[#321a10]" style={{ background: "#241610" }}>
+    <section className="py-24 border-t border-[#5a3e30]" style={{ background: "#4A2F23" }}>
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
@@ -34,16 +34,16 @@ export default function Gallery() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: "#B8794B" }}>
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-3" style={{ color: "#B8947B" }}>
             Event Snapshots
           </p>
           <h2
             className="font-bold leading-tight"
-            style={{ fontSize: "clamp(2rem, 4vw, 3rem)", color: "#EAC8A8", letterSpacing: "-0.02em" }}
+            style={{ fontSize: "clamp(2rem, 4vw, 3rem)", color: "#FFF9F2", letterSpacing: "-0.02em" }}
           >
             Hey Brew at your event.
             <br />
-            <span style={{ color: "#B8794B" }}>Every cup, a memory.</span>
+            <span style={{ color: "#B8947B" }}>Every cup, a memory.</span>
           </h2>
         </motion.div>
 
@@ -53,7 +53,7 @@ export default function Gallery() {
             <motion.div
               key={photo.src}
               className={`relative overflow-hidden group ${photo.span}`}
-              style={{ borderRadius: "14px", background: "#4C2D1F" }}
+              style={{ borderRadius: "14px", background: "#7A5644" }}
               initial={{ opacity: 0, scale: 0.97 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -73,7 +73,7 @@ export default function Gallery() {
               {/* Warm overlay on hover */}
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                style={{ background: "rgba(36,22,16,0.35)" }}
+                style={{ background: "rgba(74,47,35,0.35)" }}
               />
             </motion.div>
           ))}

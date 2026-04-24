@@ -8,10 +8,10 @@ import { mdiCheckDecagram, mdiCheckCircle } from "@mdi/js";
 type Status = "idle" | "submitting" | "success" | "error";
 
 const INPUT_CLASS =
-  "w-full bg-[#241610] border border-[#7A4A2E] rounded-[30px] px-4 py-2.5 text-sm text-[#EAC8A8] placeholder-[#7A4A2E] outline-none transition-all duration-200 focus:border-[#B8794B]";
+  "w-full bg-[#4A2F23] border border-[#9a7060] rounded-[30px] px-4 py-2.5 text-sm text-[#FFF9F2] placeholder-[#9a7060] outline-none transition-all duration-200 focus:border-[#B8947B]";
 
 const LABEL_STYLE = {
-  color: "#a07858",
+  color: "#c4a890",
   letterSpacing: "0.08em",
   textTransform: "uppercase" as const,
 };
@@ -27,7 +27,7 @@ export default function Order() {
   }
 
   return (
-    <section id="order" className="py-24 border-t border-[#321a10]" style={{ background: "#241610" }}>
+    <section id="order" className="py-24 border-t border-[#5a3e30]" style={{ background: "#4A2F23" }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
@@ -38,18 +38,18 @@ export default function Order() {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#B8794B" }}>
+            <p className="text-xs font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: "#B8947B" }}>
               Take The Next Step
             </p>
             <h2
               className="font-bold mb-4 leading-tight"
-              style={{ fontSize: "clamp(2rem, 4vw, 3rem)", color: "#EAC8A8", letterSpacing: "-0.02em" }}
+              style={{ fontSize: "clamp(2rem, 4vw, 3rem)", color: "#FFF9F2", letterSpacing: "-0.02em" }}
             >
               Ready to brew
               <br />
-              <span style={{ color: "#B8794B" }}>your success?</span>
+              <span style={{ color: "#B8947B" }}>your success?</span>
             </h2>
-            <p className="text-sm leading-relaxed mb-8 max-w-md" style={{ color: "#a07858" }}>
+            <p className="text-sm leading-relaxed mb-8 max-w-md" style={{ color: "#c4a890" }}>
               Fill out the inquiry form and our franchise development team will get in touch
               with you shortly to discuss availability in your preferred location.
             </p>
@@ -57,12 +57,12 @@ export default function Order() {
             {/* Open nationwide badge */}
             <div
               className="flex items-start gap-3 p-4 mb-8"
-              style={{ background: "#4C2D1F", border: "1px solid #7A4A2E", borderRadius: "16px" }}
+              style={{ background: "#7A5644", border: "1px solid #9a7060", borderRadius: "16px" }}
             >
-              <Icon path={mdiCheckDecagram} size={1} color="#B8794B" className="shrink-0 mt-0.5" aria-hidden="true" />
+              <Icon path={mdiCheckDecagram} size={1} color="#B8947B" className="shrink-0 mt-0.5" aria-hidden="true" />
               <div>
-                <h4 className="text-sm font-bold mb-0.5" style={{ color: "#EAC8A8" }}>Open Nationwide</h4>
-                <p className="text-xs leading-relaxed" style={{ color: "#a07858" }}>
+                <h4 className="text-sm font-bold mb-0.5" style={{ color: "#FFF9F2" }}>Open Nationwide</h4>
+                <p className="text-xs leading-relaxed" style={{ color: "#c4a890" }}>
                   Actively expanding across all major regions in the Philippines.
                 </p>
               </div>
@@ -76,17 +76,17 @@ export default function Order() {
                 { label: "Facebook", value: "Hey Brew",                href: "https://www.facebook.com/HeyBrewPH/" },
               ].map((c) => (
                 <div key={c.label} className="flex items-center gap-3">
-                  <span className="text-xs w-20 shrink-0" style={{ color: "#7A4A2E", textTransform: "uppercase", letterSpacing: "0.1em" }}>
+                  <span className="text-xs w-20 shrink-0" style={{ color: "#9a7060", textTransform: "uppercase", letterSpacing: "0.1em" }}>
                     {c.label}
                   </span>
                   <a
                     href={c.href}
                     target={c.label === "Facebook" ? "_blank" : undefined}
                     rel={c.label === "Facebook" ? "noopener noreferrer" : undefined}
-                    className="text-sm transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8794B] rounded"
-                    style={{ color: "#a07858" }}
-                    onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#B8794B"; }}
-                    onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#a07858"; }}
+                    className="text-sm transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8947B] rounded"
+                    style={{ color: "#c4a890" }}
+                    onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#B8947B"; }}
+                    onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#c4a890"; }}
                   >
                     {c.value}
                   </a>
@@ -98,26 +98,26 @@ export default function Order() {
           {/* Right — inquiry form */}
           <motion.div
             className="p-8"
-            style={{ background: "#4C2D1F", border: "1px solid #7A4A2E", borderRadius: "20px" }}
+            style={{ background: "#7A5644", border: "1px solid #9a7060", borderRadius: "20px" }}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            <h3 className="text-base font-bold mb-6" style={{ color: "#EAC8A8" }}>Franchise Inquiry</h3>
+            <h3 className="text-base font-bold mb-6" style={{ color: "#FFF9F2" }}>Franchise Inquiry</h3>
 
             <div aria-live="polite" aria-atomic="true">
             {status === "success" ? (
               <div className="flex flex-col items-center justify-center py-12 text-center gap-4">
-                <Icon path={mdiCheckCircle} size={2.5} color="#B8794B" aria-hidden="true" />
-                <h4 className="text-base font-bold" style={{ color: "#EAC8A8" }}>Inquiry Received!</h4>
-                <p className="text-sm" style={{ color: "#a07858" }}>
+                <Icon path={mdiCheckCircle} size={2.5} color="#B8947B" aria-hidden="true" />
+                <h4 className="text-base font-bold" style={{ color: "#FFF9F2" }}>Inquiry Received!</h4>
+                <p className="text-sm" style={{ color: "#c4a890" }}>
                   Our team will reach out to you within 1–2 business days.
                 </p>
                 <button
                   onClick={() => setStatus("idle")}
-                  className="mt-2 text-xs underline transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8794B] rounded"
-                  style={{ color: "#a07858" }}
+                  className="mt-2 text-xs underline transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8947B] rounded"
+                  style={{ color: "#c4a890" }}
                 >
                   Submit another inquiry
                 </button>
@@ -127,20 +127,20 @@ export default function Order() {
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="firstName" className="block text-xs mb-1.5" style={LABEL_STYLE}>
-                      First Name <span style={{ color: "#B8794B" }}>*</span>
+                      First Name <span style={{ color: "#B8947B" }}>*</span>
                     </label>
                     <input id="firstName" name="firstName" type="text" required placeholder="Juan" className={INPUT_CLASS} />
                   </div>
                   <div>
                     <label htmlFor="lastName" className="block text-xs mb-1.5" style={LABEL_STYLE}>
-                      Last Name <span style={{ color: "#B8794B" }}>*</span>
+                      Last Name <span style={{ color: "#B8947B" }}>*</span>
                     </label>
                     <input id="lastName" name="lastName" type="text" required placeholder="Dela Cruz" className={INPUT_CLASS} />
                   </div>
                 </div>
                 <div>
                   <label htmlFor="mobile" className="block text-xs mb-1.5" style={LABEL_STYLE}>
-                    Mobile Number <span style={{ color: "#B8794B" }}>*</span>
+                    Mobile Number <span style={{ color: "#B8947B" }}>*</span>
                   </label>
                   <input
                     id="mobile" name="mobile" type="tel" required
@@ -151,19 +151,19 @@ export default function Order() {
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-xs mb-1.5" style={LABEL_STYLE}>
-                    Email Address <span style={{ color: "#B8794B" }}>*</span>
+                    Email Address <span style={{ color: "#B8947B" }}>*</span>
                   </label>
                   <input id="email" name="email" type="email" required placeholder="juan@email.com" className={INPUT_CLASS} />
                 </div>
                 <div>
                   <label htmlFor="location" className="block text-xs mb-1.5" style={LABEL_STYLE}>
-                    Target Location <span style={{ color: "#B8794B" }}>*</span>
+                    Target Location <span style={{ color: "#B8947B" }}>*</span>
                   </label>
                   <input id="location" name="location" type="text" required placeholder="City or Province" className={INPUT_CLASS} />
                 </div>
                 <div>
                   <label htmlFor="capital" className="block text-xs mb-1.5" style={LABEL_STYLE}>
-                    Available Capital <span style={{ color: "#B8794B" }}>*</span>
+                    Available Capital <span style={{ color: "#B8947B" }}>*</span>
                   </label>
                   <div className="relative">
                     <select id="capital" name="capital" required className={`${INPUT_CLASS} cursor-pointer appearance-none pr-8`}>
@@ -194,16 +194,16 @@ export default function Order() {
                 <motion.button
                   type="submit"
                   disabled={status === "submitting"}
-                  className="w-full py-3 text-sm font-semibold active:scale-[0.97] disabled:opacity-60 disabled:cursor-not-allowed focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8794B]"
-                  style={{ background: "#B8794B", color: "#241610", borderRadius: "30px" }}
-                  whileHover={status !== "submitting" ? { y: -4, boxShadow: "0 8px 24px rgba(184,121,75,0.35)", transition: { duration: 0.2, ease: "easeOut" } } : {}}
-                  onMouseEnter={(e) => { if (status !== "submitting") (e.currentTarget as HTMLButtonElement).style.background = "#9e6038"; }}
-                  onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.background = "#B8794B"; }}
+                  className="w-full py-3 text-sm font-semibold active:scale-[0.97] disabled:opacity-60 disabled:cursor-not-allowed focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B8947B]"
+                  style={{ background: "#B8947B", color: "#4A2F23", borderRadius: "30px" }}
+                  whileHover={status !== "submitting" ? { y: -4, boxShadow: "0 8px 24px rgba(184,148,123,0.35)", transition: { duration: 0.2, ease: "easeOut" } } : {}}
+                  onMouseEnter={(e) => { if (status !== "submitting") (e.currentTarget as HTMLButtonElement).style.background = "#9e7a5e"; }}
+                  onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.background = "#B8947B"; }}
                 >
                   {status === "submitting" ? "Sending…" : "Submit Inquiry"}
                 </motion.button>
 
-                <p className="text-xs text-center" style={{ color: "#7A4A2E" }}>
+                <p className="text-xs text-center" style={{ color: "#9a7060" }}>
                   By submitting, you agree to our Terms of Service &amp; Privacy Policy.
                 </p>
               </form>
